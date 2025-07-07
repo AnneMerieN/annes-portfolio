@@ -10,14 +10,8 @@ import {
   Briefcase,
   Download,
   Palette,
-  Calendar,
-  Award,
-  MapPin,
-  Coffee,
   Zap,
-  BookOpen,
   Monitor,
-  Headphones,
   Gamepad,
   ChevronDown,
   ArrowRight,
@@ -25,7 +19,6 @@ import {
   X,
   Play,
   Pause,
-  Users,
 } from "lucide-react"
 import Link from "next/link"
 import { useState, useRef, useEffect } from "react"
@@ -127,7 +120,7 @@ export default function CyberpunkPortfolio() {
                     {/* Social links */}
                     <div className="flex gap-4 pt-2">
                       <Link
-                        href="https://github.com"
+                        href="https://github.com/AnneMerieN"
                         target="_blank"
                         className="text-white hover:text-pink-500 transition-colors relative group"
                       >
@@ -136,7 +129,7 @@ export default function CyberpunkPortfolio() {
                         <span className="sr-only">GitHub</span>
                       </Link>
                       <Link
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/anne-merie-nguyen/"
                         target="_blank"
                         className="text-blue-500 hover:text-pink-500 transition-colors relative group"
                       >
@@ -145,7 +138,7 @@ export default function CyberpunkPortfolio() {
                         <span className="sr-only">LinkedIn</span>
                       </Link>
                       <Link
-                        href="mailto:hello@example.com"
+                        href="mailto:annemn3@uci.edu"
                         className="text-emerald-500 hover:text-pink-500 transition-colors relative group"
                       >
                         <Mail className="h-5 w-5 relative z-10" />
@@ -455,143 +448,111 @@ export default function CyberpunkPortfolio() {
         </div>
       </section>
 
-      {/* Enhanced About Section */}
+      {/* About Section */}
       <section
         id="about"
         className="py-20 border-b border-zinc-800 bg-gradient-to-br from-zinc-950 via-black to-zinc-900 relative"
       >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(249,168,212,0.05)_0%,transparent_50%)] opacity-70"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">
-              ABOUT <span className="text-pink-500">ME</span>
-            </h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">System administrator profile and operational background.</p>
-          </div>
-
           <div className="max-w-4xl mx-auto">
-            <div className="bg-zinc-900 rounded-lg border border-zinc-800 shadow-[0_0_15px_rgba(249,168,212,0.15)] overflow-hidden transition-all duration-300 hover:shadow-[0_0_25px_rgba(249,168,212,0.25)]">
-              {/* Terminal Header */}
-              <div className="bg-zinc-950 p-4 border-b border-zinc-800 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Terminal className="h-5 w-5 text-pink-500" />
-                  <h3 className="text-zinc-300 text-sm uppercase tracking-wider">ABOUT_ME.exe</h3>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="flex space-x-1.5">
-                    <div className="h-3 w-3 rounded-full bg-zinc-700"></div>
-                    <div className="h-3 w-3 rounded-full bg-zinc-700"></div>
-                    <div className="h-3 w-3 rounded-full bg-pink-500"></div>
-                  </div>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                About <span className="text-pink-500">Me</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+              {/* Profile Image */}
+              <div className="lg:col-span-1 flex justify-center">
+                <div className="relative w-64 h-64 rounded-2xl overflow-hidden border-2 border-zinc-700 hover:border-pink-500/50 transition-all duration-300">
+                  <Image
+                    src="/images/profile.png"
+                    alt="Anne Merie Nguyen"
+                    width={256}
+                    height={256}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/20 to-transparent"></div>
                 </div>
               </div>
 
-              {/* Main Content */}
-              <div className="p-6 md:p-8">
-                {/* Bio Section with Terminal Effect */}
-                <div className="bg-zinc-950 rounded-lg border border-zinc-800 p-4 mb-10">
-                  <div className="flex items-center gap-2 mb-3 text-pink-500 text-sm">
-                    <span>$</span>
-                    <span className="animate-pulse">_</span>
-                    <span className="typing-effect">cat bio.txt</span>
-                  </div>
-                  <div className="space-y-4 text-zinc-300 pl-4">
-                    <p className="leading-relaxed">
-                      <span className="text-pink-500">{">"}</span> I'm a full-stack developer with 5+ years of
-                      experience building web applications and digital experiences.
-                    </p>
-                    <p className="leading-relaxed">
-                      <span className="text-pink-500">{">"}</span> My journey began with a degree in Computer Science,
-                      followed by work at several tech startups where I honed my skills in modern web development.
-                    </p>
-                    <p className="leading-relaxed">
-                      <span className="text-pink-500">{">"}</span> I specialize in creating responsive, accessible, and
-                      performant applications with clean code and intuitive user interfaces.
-                    </p>
-                    <p className="leading-relaxed">
-                      <span className="text-pink-500">{">"}</span> When I'm not coding, you can find me exploring new
-                      technologies, contributing to open source, or playing video games.
-                    </p>
+              {/* About Content */}
+              <div className="lg:col-span-2 space-y-8">
+                <div className="prose prose-invert max-w-none">
+                  <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                    I'm a passionate UX Designer and Full-Stack Developer with over 5 years of experience creating
+                    digital experiences that matter. I specialize in bridging the gap between beautiful design and
+                    functional code.
+                  </p>
+                  <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                    My journey began with a Computer Science degree, followed by hands-on experience at tech startups
+                    where I developed expertise in modern web technologies, user-centered design, and game development.
+                  </p>
+                  <p className="text-lg text-zinc-300 leading-relaxed">
+                    I believe in creating accessible, performant applications with intuitive interfaces that solve real
+                    problems for real people.
+                  </p>
+                </div>
+
+                {/* Book Recommendation */}
+                <div className="bg-zinc-900/50 rounded-xl border border-zinc-800 p-6 hover:border-pink-500/30 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="text-2xl">📚</div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-2">Book Recommendation</h3>
+                      <p className="text-pink-500 font-semibold mb-2">"The Design of Everyday Things" by Don Norman</p>
+                      <p className="text-zinc-400 text-sm">
+                        A timeless classic that fundamentally changed how I think about user experience and design.
+                        Norman's insights into human-centered design principles are invaluable for anyone creating
+                        digital products.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                {/* Stats Grid */}
-                <div className="mb-8">
-                  <div className="flex items-center gap-2 mb-6">
-                    <Award className="h-5 w-5 text-pink-500" />
-                    <h4 className="text-zinc-300 text-sm uppercase tracking-wider">STATS</h4>
-                    <div className="h-px flex-grow bg-zinc-800"></div>
-                  </div>
-
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {[
-                      { icon: <Calendar className="h-5 w-5 text-pink-500" />, label: "EXPERIENCE", value: "5+ YEARS" },
-                      { icon: <Briefcase className="h-5 w-5 text-pink-500" />, label: "PROJECTS", value: "50+" },
-                      { icon: <Users className="h-5 w-5 text-pink-500" />, label: "CLIENTS", value: "20+" },
-                      { icon: <MapPin className="h-5 w-5 text-pink-500" />, label: "LOCATION", value: "REMOTE" },
-                    ].map((stat, index) => (
-                      <div
-                        key={index}
-                        className="bg-zinc-800 rounded-lg p-4 border border-zinc-700 hover:border-pink-500/30 transition-all duration-300 group"
-                      >
-                        <div className="flex items-center justify-center mb-2">{stat.icon}</div>
-                        <div className="text-xs text-zinc-500 text-center mb-1">{stat.label}</div>
-                        <div className="text-pink-500 font-bold text-center group-hover:scale-110 transition-transform">
-                          {stat.value}
-                        </div>
-                      </div>
-                    ))}
+                {/* Favorite Game */}
+                <div className="bg-zinc-900/50 rounded-xl border border-zinc-800 p-6 hover:border-cyan-400/30 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="text-2xl">🎮</div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-2">Favorite Game</h3>
+                      <p className="text-cyan-400 font-semibold mb-2">Hollow Knight</p>
+                      <p className="text-zinc-400 text-sm">
+                        An indie masterpiece that showcases incredible art direction, tight gameplay mechanics, and
+                        atmospheric storytelling. It's a perfect example of how small teams can create extraordinary
+                        experiences.
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                {/* Interests */}
-                <div>
-                  <div className="flex items-center gap-2 mb-6">
-                    <Zap className="h-5 w-5 text-pink-500" />
-                    <h4 className="text-zinc-300 text-sm uppercase tracking-wider">INTERESTS</h4>
-                    <div className="h-px flex-grow bg-zinc-800"></div>
+            {/* Simplified Interests */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-white mb-8 text-center">Interests & Hobbies</h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  { icon: "💻", label: "Coding" },
+                  { icon: "🎨", label: "Design" },
+                  { icon: "🎮", label: "Gaming" },
+                  { icon: "📚", label: "Reading" },
+                  { icon: "🎵", label: "Music" },
+                  { icon: "🏸", label: "Badminton" },
+                  { icon: "☕", label: "Coffee" },
+                  { icon: "🌱", label: "Learning" },
+                ].map((interest, index) => (
+                  <div
+                    key={index}
+                    className="bg-zinc-900/50 rounded-lg px-4 py-3 border border-zinc-800 hover:border-pink-500/30 transition-all duration-300 group flex items-center gap-2"
+                  >
+                    <span className="text-lg">{interest.icon}</span>
+                    <span className="text-zinc-300 group-hover:text-pink-500 transition-colors text-sm font-medium">
+                      {interest.label}
+                    </span>
                   </div>
-
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                    {[
-                      { icon: <BookOpen className="h-6 w-6 text-amber-400" />, label: "Reading" },
-                      { icon: <Monitor className="h-6 w-6 text-blue-400" />, label: "Tech" },
-                      { icon: <Headphones className="h-6 w-6 text-purple-400" />, label: "Music" },
-                      {
-                        icon: (
-                          <svg
-                            className="h-6 w-6 text-emerald-400"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <circle cx="12" cy="12" r="8" />
-                            <path d="M12 4c2 3 4 5 8 6-4 1-6 3-8 6-2-3-4-5-8-6 4-1 6-3 8-6z" />
-                            <path d="M20 10c-2 3-4 5-8 6" />
-                            <path d="M4 10c2 3 4 5 8 6" />
-                          </svg>
-                        ),
-                        label: "Tennis",
-                      },
-                      { icon: <Gamepad className="h-6 w-6 text-red-400" />, label: "Gaming" },
-                      { icon: <Coffee className="h-6 w-6 text-yellow-600" />, label: "Coffee" },
-                    ].map((interest, index) => (
-                      <div
-                        key={index}
-                        className="bg-zinc-800/50 rounded-lg p-3 border border-zinc-700 flex flex-col items-center hover:bg-zinc-800 hover:border-pink-500/30 transition-all duration-300 group"
-                      >
-                        <div className="group-hover:text-pink-500 transition-colors mb-2">{interest.icon}</div>
-                        <div className="text-xs text-zinc-400 group-hover:text-zinc-300 transition-colors">
-                          {interest.label}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -628,7 +589,7 @@ export default function CyberpunkPortfolio() {
                       icon: <Github className="h-8 w-8" />,
                       name: "GitHub",
                       handle: "@janedoe",
-                      url: "https://github.com",
+                      url: "https://github.com/AnneMerieN",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-white",
                     },
@@ -636,15 +597,15 @@ export default function CyberpunkPortfolio() {
                       icon: <Linkedin className="h-8 w-8" />,
                       name: "LinkedIn",
                       handle: "Anne Merie Nguyen",
-                      url: "https://linkedin.com",
+                      url: "https://www.linkedin.com/in/anne-merie-nguyen/",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-blue-500",
                     },
                     {
                       icon: <Mail className="h-8 w-8" />,
                       name: "Email",
-                      handle: "hello@example.com",
-                      url: "mailto:hello@example.com",
+                      handle: "annemn3@uci.edu",
+                      url: "mailto:annemn3@uci.edu",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-emerald-500",
                     },
@@ -707,7 +668,7 @@ export default function CyberpunkPortfolio() {
 
             <div className="flex gap-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/AnneMerieN"
                 target="_blank"
                 className="text-white hover:text-pink-500 transition-colors"
               >
@@ -715,14 +676,14 @@ export default function CyberpunkPortfolio() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/anne-merie-nguyen/"
                 target="_blank"
                 className="text-blue-500 hover:text-pink-500 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="mailto:hello@example.com" className="text-emerald-500 hover:text-pink-400 transition-colors">
+              <Link href="mailto:annemn3@uci.edu" className="text-emerald-500 hover:text-pink-400 transition-colors">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -980,7 +941,7 @@ const projects = [
     description: "A full-stack e-commerce platform with payment integration and admin dashboard.",
     tags: ["E-COMMERCE", "Next.js", "Stripe", "Prisma"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -988,7 +949,7 @@ const projects = [
     description: "An AI-powered application that generates content based on user prompts.",
     tags: ["AI", "React", "OpenAI", "Node.js"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -996,7 +957,7 @@ const projects = [
     description: "A collaborative task management application with real-time updates.",
     tags: ["PRODUCTIVITY", "TypeScript", "Firebase", "React"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -1004,7 +965,7 @@ const projects = [
     description: "A responsive analytics dashboard with data visualization and reporting.",
     tags: ["ANALYTICS", "Vue.js", "D3.js", "Express"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -1012,7 +973,7 @@ const projects = [
     description: "Real-time messaging application with end-to-end encryption and file sharing.",
     tags: ["COMMUNICATION", "Socket.io", "React", "MongoDB"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -1020,7 +981,7 @@ const projects = [
     description: "A modern blogging platform with markdown support and SEO optimization.",
     tags: ["CONTENT", "Next.js", "GraphQL", "PostgreSQL"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -1028,7 +989,7 @@ const projects = [
     description: "A security analysis tool for identifying vulnerabilities in web applications.",
     tags: ["SECURITY", "Python", "React", "Docker"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -1036,7 +997,7 @@ const projects = [
     description: "An immersive VR experience built with WebXR and Three.js.",
     tags: ["VR", "Three.js", "WebXR", "JavaScript"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
 ]

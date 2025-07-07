@@ -51,476 +51,141 @@ export default function TFTSwitchCaseStudy() {
           </div>
         </div>
 
-        {/* Content */}
-        <div className="max-w-4xl mx-auto space-y-16">
+          {/* ────────────  Content  ──────────── */}
+        <div className="max-w-4xl mx-auto space-y-24">
           {/* Project Overview */}
-          <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8 hover:border-pink-500/30 transition-all duration-300">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Project Overview
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="space-y-6">
-                <div className="flex items-center gap-3">
-                  <Calendar className="h-5 w-5 text-pink-500" />
-                  <div>
-                    <div className="text-zinc-400 text-sm">Timeline</div>
-                    <div className="text-white font-semibold">8 weeks (Q2 2023)</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <Users className="h-5 w-5 text-pink-500" />
-                  <div>
-                    <div className="text-zinc-400 text-sm">Team</div>
-                    <div className="text-white font-semibold">Solo UX Designer</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div className="flex items-center gap-3">
-                  <Wrench className="h-5 w-5 text-pink-500" />
-                  <div>
-                    <div className="text-zinc-400 text-sm">Tools</div>
-                    <div className="text-white font-semibold">Figma, Unity, Photoshop</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <Target className="h-5 w-5 text-pink-500" />
-                  <div>
-                    <div className="text-zinc-400 text-sm">Goal</div>
-                    <div className="text-white font-semibold">Seamless PC-to-Switch adaptation</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-zinc-300 leading-relaxed">
-              <p className="mb-4">
-                Teamfight Tactics, Riot Games' auto-battler strategy game, needed to transition from PC to Nintendo
-                Switch while maintaining its core gameplay experience. This project focused on redesigning the user
-                interface and interaction patterns to work seamlessly on a handheld console with limited screen real
-                estate and different input methods.
-              </p>
-              <p>
-                The challenge was to preserve the strategic depth and visual clarity that made TFT successful on PC
-                while adapting to the Switch's unique constraints and opportunities.
-              </p>
-            </div>
-          </section>
-
-          {/* Problem Exploration */}
-          <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Problem Exploration
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="text-zinc-300 leading-relaxed">
-              <p>
-                Initial analysis revealed that TFT's PC interface relied heavily on desktop-specific interaction
-                patterns that would fundamentally break on Nintendo Switch. The game's success on PC stemmed from
-                precise mouse controls, hover states for information display, and multi-window layouts that simply don't
-                translate to console gaming. Early prototyping sessions showed that direct ports of PC interfaces to
-                handheld devices resulted in frustrating user experiences, with players unable to access critical game
-                information efficiently during time-pressured decision-making moments.
-              </p>
-            </div>
-          </section>
-
-          {/* Empathizing */}
-          <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Empathizing
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="text-zinc-300 leading-relaxed">
-              <p>
-                Through observational studies and interviews with both PC TFT players and Nintendo Switch enthusiasts,
-                we discovered that Switch players have fundamentally different expectations and behaviors. They value
-                quick, intuitive interactions that work seamlessly in both handheld and docked modes. Many expressed
-                frustration with games that felt like "lazy PC ports" and emphasized the importance of interfaces that
-                felt native to the Nintendo ecosystem. Players also revealed that they often play in shorter, more
-                casual sessions compared to PC gaming, requiring interfaces that could accommodate both quick matches
-                and longer strategic sessions.
-              </p>
-            </div>
-          </section>
-
-          {/* The Challenge */}
-          <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              The Challenge
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="text-zinc-300 space-y-4 leading-relaxed">
-              <p>
-                <strong className="text-pink-500">Core Problem:</strong> How do we adapt a complex PC strategy game
-                designed for mouse and keyboard to work intuitively on a handheld console with touch and controller
-                inputs?
-              </p>
-              <p>
-                The Nintendo Switch presents unique constraints: a 6.2-inch screen in handheld mode, Joy-Con controllers
-                with limited precision, and the need to support both docked and portable play modes. TFT's PC interface
-                relies heavily on hover states, right-click menus, and precise cursor positioning—none of which
-                translate directly to console gaming.
-              </p>
-              <p>
-                <strong className="text-cyan-400">Key Question:</strong> Can we maintain TFT's strategic depth while
-                creating an interface that feels native to Nintendo Switch players?
-              </p>
-            </div>
-          </section>
-
-          {/* Research */}
-          <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Research
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-bold text-pink-500 mb-4">Competitive Analysis</h3>
-                <div className="text-zinc-300 space-y-3">
-                  <p>
-                    • <strong>Chess.com Mobile:</strong> Simplified board interaction with tap-to-select mechanics
-                  </p>
-                  <p>
-                    • <strong>Hearthstone:</strong> Card-based UI optimized for touch with clear visual hierarchy
-                  </p>
-                  <p>
-                    • <strong>Civilization VI (Switch):</strong> Successful PC-to-console adaptation with redesigned
-                    menus
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-pink-500 mb-4">Heuristic Evaluation</h3>
-                <div className="text-zinc-300 space-y-3">
-                  <p>• Information density too high for small screens</p>
-                  <p>• Hover-dependent interactions need alternatives</p>
-                  <p>• Text sizes below Nintendo's accessibility guidelines</p>
-                  <p>• Complex nested menus difficult with controller navigation</p>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-pink-500 mb-4">User Expectations</h3>
-                <div className="text-zinc-300 space-y-3">
-                  <p>• Switch players expect intuitive button mapping</p>
-                  <p>• Touch controls should feel responsive and precise</p>
-                  <p>• UI should scale appropriately between docked/handheld modes</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Key Insights */}
-          <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Key Insights
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-zinc-900/80 rounded-xl p-6 border border-pink-500/20">
-                <Lightbulb className="h-8 w-8 text-pink-500 mb-4" />
-                <h3 className="text-lg font-bold text-white mb-3">Context is King</h3>
-                <p className="text-zinc-300 text-sm">
-                  Switch players need immediate visual context without hover states. All critical information must be
-                  visible at a glance.
-                </p>
-              </div>
-
-              <div className="bg-zinc-900/80 rounded-xl p-6 border border-cyan-400/20">
-                <Gamepad2 className="h-8 w-8 text-cyan-400 mb-4" />
-                <h3 className="text-lg font-bold text-white mb-3">Input Flexibility</h3>
-                <p className="text-zinc-300 text-sm">
-                  Supporting both touch and controller inputs simultaneously creates the most accessible experience for
-                  all play styles.
-                </p>
-              </div>
-
-              <div className="bg-zinc-900/80 rounded-xl p-6 border border-purple-400/20">
-                <Monitor className="h-8 w-8 text-purple-400 mb-4" />
-                <h3 className="text-lg font-bold text-white mb-3">Adaptive Scaling</h3>
-                <p className="text-zinc-300 text-sm">
-                  UI elements need to dynamically scale based on play mode while maintaining consistent interaction
-                  patterns.
-                </p>
-              </div>
-
-              <div className="bg-zinc-900/80 rounded-xl p-6 border border-emerald-400/20">
-                <Smartphone className="h-8 w-8 text-emerald-400 mb-4" />
-                <h3 className="text-lg font-bold text-white mb-3">Gesture Economy</h3>
-                <p className="text-zinc-300 text-sm">
-                  Reducing the number of required gestures and taps improves both speed and accessibility for handheld
-                  play.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Design Principles */}
-          <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Design Principles
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-pink-500 mt-2 flex-shrink-0"></div>
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-8">Project Overview</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 text-zinc-300">
+              <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Immediate Clarity</h3>
-                  <p className="text-zinc-300">All game state information visible without additional input</p>
+                  <p className="text-sm text-zinc-400">Timeline</p>
+                  <p className="font-semibold text-white flex items-center gap-2"><Calendar className="h-4 w-4" /> Jan. 2025 - May 2025</p>
                 </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Consistent Navigation</h3>
-                  <p className="text-zinc-300">Unified button mapping across all game modes and menus</p>
+                  <p className="text-sm text-zinc-400">Team</p>
+                  <p className="font-semibold text-white flex items-center gap-2"><Users className="h-4 w-4" /> Personal Project</p>
                 </div>
               </div>
-
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div>
+              <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Adaptive Interface</h3>
-                  <p className="text-zinc-300">Dynamic scaling and layout adjustments for different play modes</p>
+                  <p className="text-sm text-zinc-400">Tools</p>
+                  <p className="font-semibold text-white flex items-center gap-2"><Wrench className="h-4 w-4" /> Figma, Miro</p>
                 </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-emerald-400 mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Gesture Efficiency</h3>
-                  <p className="text-zinc-300">Minimize required inputs while maintaining strategic depth</p>
+                  <p className="text-sm text-zinc-400">Role</p>
+                  <p className="font-semibold text-white flex items-center gap-2"><Target className="h-4 w-4" /> UI/UX Designer</p>
                 </div>
               </div>
+            </div>
+            <p className="text-zinc-300 leading-relaxed">
+              Riot Game's Teamfight Tactics TFT is available on both PC and mobile platforms. I wanted to reimagine the game on the Nintendo Switch console.
+            </p>
+          </section>
 
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-yellow-400 mt-2 flex-shrink-0"></div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Accessibility First</h3>
-                  <p className="text-zinc-300">Meet Nintendo's accessibility standards for text size and contrast</p>
-                </div>
-              </div>
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Problem Exploration</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Direct ports of the PC UI proved unusable: hover-dependent tooltips, precise drag-and-drop, and tiny text
+              clashed with handheld ergonomics. Early testing surfaced frustration around speed and information access
+              during fast decision windows.
+            </p>
+
+            {/* Inserted image */}
+            <div className="rounded-xl overflow-hidden border border-zinc-700">
+              <img
+                src="/images/TFT-hotkeys-guide.png"
+                alt="TFT PC Hotkeys Overview"
+                className="w-full object-cover"
+              />
             </div>
           </section>
 
-          {/* Wireframes & Flow */}
-          <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Wireframes & Flow
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-700">
-                <div className="aspect-video relative bg-gradient-to-br from-pink-500/20 to-purple-500/20">
-                  <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(15,15,17,0.9)_1px,transparent_1px),linear-gradient(90deg,rgba(15,15,17,0.9)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <Monitor className="h-12 w-12 text-pink-500 mx-auto mb-2 opacity-60" />
-                      <p className="text-zinc-400 text-sm">Wireframe Placeholder</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4 text-sm text-zinc-400 text-center">
-                  Initial board layout wireframes showing champion positioning grid
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-700">
-                <div className="aspect-video relative bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
-                  <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(15,15,17,0.9)_1px,transparent_1px),linear-gradient(90deg,rgba(15,15,17,0.9)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <Smartphone className="h-12 w-12 text-cyan-400 mx-auto mb-2 opacity-60" />
-                      <p className="text-zinc-400 text-sm">Flow Diagram</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4 text-sm text-zinc-400 text-center">
-                  User flow for champion selection and positioning in handheld mode
-                </div>
-              </div>
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Empathizing</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Interviews with regular Switch players highlighted a desire for “native-feeling” controls and the ability
+              to play brief sessions. They expect large touch targets, consistent button mapping, and clarity at a
+              glance—even in tabletop mode two-feet away.
+            </p>
+            <div className="h-64 bg-zinc-800 rounded-lg border border-zinc-700 flex items-center justify-center text-zinc-500">
+              [ Empathizing Image Placeholder ]
             </div>
           </section>
 
-          {/* Testing & Iteration */}
-          <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Testing & Iteration
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-bold text-pink-500 mb-4">Feedback Summary</h3>
-                <div className="bg-zinc-800/50 rounded-lg p-6 border border-zinc-700">
-                  <div className="text-zinc-300 space-y-3">
-                    <p>
-                      • <strong className="text-emerald-400">Positive:</strong> Touch controls felt intuitive, visual
-                      hierarchy improved readability
-                    </p>
-                    <p>
-                      • <strong className="text-yellow-400">Concerns:</strong> Some buttons too small in handheld mode,
-                      shop interface cluttered
-                    </p>
-                    <p>
-                      • <strong className="text-red-400">Issues:</strong> Controller navigation inconsistent, item
-                      tooltips hard to read
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-lg font-bold text-white mb-3">Before</h4>
-                  <div className="bg-zinc-900 rounded-lg border border-zinc-700 aspect-video flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="h-8 w-8 bg-red-500/20 rounded mx-auto mb-2"></div>
-                      <p className="text-zinc-400 text-sm">Original PC Interface</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-lg font-bold text-white mb-3">After</h4>
-                  <div className="bg-zinc-900 rounded-lg border border-zinc-700 aspect-video flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="h-8 w-8 bg-emerald-500/20 rounded mx-auto mb-2"></div>
-                      <p className="text-zinc-400 text-sm">Optimized Switch Interface</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Research</h2>
+            <ul className="list-disc list-inside space-y-2 text-zinc-300 mb-4">
+              <li><strong className="text-white">Competitive Analysis:</strong> Hearthstone &amp; Auto Chess mobile flows</li>
+              <li><strong className="text-white">Heuristic Review:</strong> Identified info density &amp; hover reliance as top issues</li>
+              <li><strong className="text-white">Guideline Audit:</strong> Mapped UI against Nintendo accessibility specs</li>
+            </ul>
+            <div className="h-64 bg-zinc-800 rounded-lg border border-zinc-700 flex items-center justify-center text-zinc-500">
+              [ Research Image Placeholder ]
             </div>
           </section>
 
-          {/* Final Solution */}
-          <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Final Solution
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-bold text-pink-500 mb-4">Snap Grid System</h3>
-                <p className="text-zinc-300 mb-4">
-                  Implemented a magnetic grid system that automatically snaps champions to valid positions, eliminating
-                  the need for precise cursor placement while maintaining strategic positioning options.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-cyan-400 mb-4">Redesigned HUD</h3>
-                <p className="text-zinc-300 mb-4">
-                  Consolidated critical information into persistent UI elements with larger touch targets and improved
-                  contrast ratios for handheld visibility.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-purple-400 mb-4">Smart Control Remapping</h3>
-                <p className="text-zinc-300 mb-4">
-                  Created context-sensitive button mappings that adapt based on current game state, reducing cognitive
-                  load while maintaining quick access to all functions.
-                </p>
-              </div>
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">The Challenge</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              How can we maintain TFT’s rich strategy while making every core action feel effortless on a controller or
+              touch screen? The end solution needed to be just as competitive as the PC version—without feeling like a
+              second-class citizen.
+            </p>
+            <div className="h-64 bg-zinc-800 rounded-lg border border-zinc-700 flex items-center justify-center text-zinc-500">
+              [ Challenge Image Placeholder ]
             </div>
           </section>
 
-          {/* Learnings */}
-          <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Learnings
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="text-zinc-300 space-y-4 leading-relaxed">
-              <p>
-                <strong className="text-pink-500">Platform constraints drive innovation:</strong> The Switch's
-                limitations forced creative solutions that ultimately improved the overall user experience, even for PC
-                players.
-              </p>
-              <p>
-                <strong className="text-cyan-400">Context switching is expensive:</strong> Users struggled when
-                interface patterns changed between game modes. Consistency across all interactions proved more important
-                than mode-specific optimizations.
-              </p>
-              <p>
-                <strong className="text-purple-400">Accessibility benefits everyone:</strong> Designing for handheld
-                visibility and touch accessibility created a more inclusive experience that worked better for all
-                players.
-              </p>
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Wireframes & Flow</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              I designed wireframes to showcase snap grid movement, HUD in handheld mode, and control overlays. These helped evaluate pacing, visibility, and ease of access.
+            </p>
+            <div className="h-80 bg-zinc-800 rounded-lg border border-zinc-700 flex items-center justify-center text-zinc-500">
+              [ Wireframe Image Placeholder ]
             </div>
           </section>
 
-          {/* Next Steps */}
-          <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
-              <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
-              Next Steps
-              <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
-            </h2>
-
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-pink-500 mt-2 flex-shrink-0"></div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Advanced Gesture Support</h3>
-                  <p className="text-zinc-300">
-                    Implement multi-touch gestures for power users who want faster interaction methods
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Cross-Platform Progression</h3>
-                  <p className="text-zinc-300">Develop seamless account syncing and cross-platform play features</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="h-2 w-2 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Performance Optimization</h3>
-                  <p className="text-zinc-300">
-                    Continue optimizing for stable 60fps in both docked and handheld modes
-                  </p>
-                </div>
-              </div>
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Testing & Iteration</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              I gathered feedback from designers and casual gamers. Early mockups suffered from pacing lags and text overflow. I rebalanced layout grids, adjusted contrast, and sped up snap movement through visual cues.
+            </p>
+            <div className="h-80 bg-zinc-800 rounded-lg border border-zinc-700 flex items-center justify-center text-zinc-500">
+              [ Before & After Image Placeholder ]
             </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Final Solution</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              The final system featured a hex snap-to grid, minimalist HUD with radial menus, and remapped controls:
+              A = select/place, B = cancel, L/R = tab between menus, ZR = roll, ZL = level up.
+            </p>
+            <div className="h-80 bg-zinc-800 rounded-lg border border-zinc-700 flex items-center justify-center text-zinc-500">
+              [ Final Prototype Image Placeholder ]
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Learnings</h2>
+            <p className="text-zinc-300 leading-relaxed">
+              Adapting UX for console means thinking spatially—button mapping, screen distance, and timing become critical.
+              Minimal UI doesn’t mean minimal depth. The smoother it feels, the more tactical thinking it unlocks.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-4">Next Steps</h2>
+            <p className="text-zinc-300 leading-relaxed">
+              I'd love to build this concept in Unity and conduct full user tests. Future ideas include voice shortcuts and predictive auto-placement based on match phase.
+            </p>
           </section>
         </div>
       </div>
+
+
 
       {/* Footer */}
       <footer className="bg-black border-t border-zinc-800 py-8 relative">

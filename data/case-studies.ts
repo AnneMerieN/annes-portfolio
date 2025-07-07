@@ -99,7 +99,7 @@ export const caseStudies: CaseStudy[] = [
       "Adding small details like screen shake on collision and particle effects for collecting items significantly enhanced the game feel with minimal code.",
     ],
     demoUrl: "https://example.com/flappy-kirby",
-    githubUrl: "https://github.com/example/flappy-kirby",
+    githubUrl: "https://github.com/AnneMerieN/example/flappy-kirby",
     nextProject: {
       slug: "cosmic-defender",
       title: "COSMIC DEFENDER",
@@ -163,7 +163,7 @@ export const caseStudies: CaseStudy[] = [
       "Performance optimization was crucial - techniques like object pooling and texture atlases helped maintain smooth gameplay even during intense sequences.",
     ],
     demoUrl: "https://example.com/cosmic-defender",
-    githubUrl: "https://github.com/example/cosmic-defender",
+    githubUrl: "https://github.com/AnneMerieN/example/cosmic-defender",
     prevProject: {
       slug: "flappy-kirby",
       title: "FLAPPY KIRBY",
