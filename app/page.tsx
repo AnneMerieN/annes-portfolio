@@ -107,20 +107,20 @@ export default function CyberpunkPortfolio() {
                       </Link>
 
                       <Link
-                        href="/files/anne-merie-nguyen-cv.pdf"
+                        href="/Anne_Merie_Nguyen_Resume_Official.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border border-zinc-700 text-zinc-300 hover:border-pink-500 hover:text-pink-500 rounded-xl transition-all duration-300 uppercase tracking-wider text-sm px-6 py-3 h-auto flex items-center"
                       >
                         <Download className="mr-2 h-4 w-4" />
-                        Download CV
+                        Download Resume
                       </Link>
                     </div>
 
                     {/* Social links */}
                     <div className="flex gap-4 pt-2">
                       <Link
-                        href="https://github.com"
+                        href="https://github.com/AnneMerieN"
                         target="_blank"
                         className="text-white hover:text-pink-500 transition-colors relative group"
                       >
@@ -129,7 +129,7 @@ export default function CyberpunkPortfolio() {
                         <span className="sr-only">GitHub</span>
                       </Link>
                       <Link
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/anne-merie-nguyen/"
                         target="_blank"
                         className="text-blue-500 hover:text-pink-500 transition-colors relative group"
                       >
@@ -581,7 +581,7 @@ export default function CyberpunkPortfolio() {
                       icon: <Github className="h-8 w-8" />,
                       name: "GitHub",
                       handle: "@AnneMerieN",
-                      url: "https://github.com",
+                      url: "https://github.com/AnneMerieN",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-white",
                     },
@@ -589,15 +589,15 @@ export default function CyberpunkPortfolio() {
                       icon: <Linkedin className="h-8 w-8" />,
                       name: "LinkedIn",
                       handle: "Anne Merie Nguyen",
-                      url: "https://linkedin.com",
+                      url: "https://www.linkedin.com/in/anne-merie-nguyen/",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-blue-500",
                     },
                     {
                       icon: <Mail className="h-8 w-8" />,
                       name: "Email",
-                      handle: "hello@example.com",
-                      url: "mailto:hello@example.com",
+                      handle: "annemn3@uci.edu",
+                      url: "mailto:annemn3@uci.edu",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-emerald-500",
                     },
@@ -646,7 +646,7 @@ export default function CyberpunkPortfolio() {
               <div className="text-pink-500 font-bold tracking-wider uppercase">ANNE_MERIE_NGUYEN</div>
             </div>
 
-            <div className="flex gap-6 mb-4 md:mb-0">
+            {/* <div className="flex gap-6 mb-4 md:mb-0">
               {["HOME", "PROJECTS", "SKILLS", "ABOUT", "CONTACT"].map((item) => (
                 <Link
                   key={item}
@@ -656,11 +656,11 @@ export default function CyberpunkPortfolio() {
                   {item}
                 </Link>
               ))}
-            </div>
+            </div> */}
 
             <div className="flex gap-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/AnneMerieN"
                 target="_blank"
                 className="text-white hover:text-pink-500 transition-colors"
               >
@@ -668,7 +668,7 @@ export default function CyberpunkPortfolio() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/anne-merie-nguyen/"
                 target="_blank"
                 className="text-blue-500 hover:text-pink-500 transition-colors"
               >
@@ -684,7 +684,7 @@ export default function CyberpunkPortfolio() {
 
           <div className="mt-8 pt-6 border-t border-zinc-900 text-center">
             <div className="text-xs text-zinc-600">
-              <span className="text-pink-500">SYSTEM</span> © {new Date().getFullYear()} All rights reserved.
+              <span className="text-pink-500">ANNE MERIE NGUYEN</span> © {new Date().getFullYear()} All rights reserved.
             </div>
             <div className="text-xs text-zinc-800 mt-1">NEXUS OS v3.42.1</div>
           </div>
@@ -933,7 +933,7 @@ const projects = [
     description: "Teamfight Tactics (TFT) is a popular autobattler developed by Riot Games, originally designed for PC and mobile platforms. However, no version exists for gaming consoles like the Nintendo Switch, despite its massive user base and portability benefits. This case study explores how TFT's gameplay can be adapted for the Nintendo Switch, balancing deep strategy mechanics with a console-friendly user interface",
     tags: ["E-COMMERCE", "Next.js", "Stripe", "Prisma"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -941,7 +941,7 @@ const projects = [
     description: "An AI-powered application that generates content based on user prompts.",
     tags: ["AI", "React", "OpenAI", "Node.js"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -949,7 +949,7 @@ const projects = [
     description: "A collaborative task management application with real-time updates.",
     tags: ["PRODUCTIVITY", "TypeScript", "Firebase", "React"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -957,7 +957,7 @@ const projects = [
     description: "A responsive analytics dashboard with data visualization and reporting.",
     tags: ["ANALYTICS", "Vue.js", "D3.js", "Express"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -965,7 +965,7 @@ const projects = [
     description: "Real-time messaging application with end-to-end encryption and file sharing.",
     tags: ["COMMUNICATION", "Socket.io", "React", "MongoDB"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -973,7 +973,7 @@ const projects = [
     description: "A modern blogging platform with markdown support and SEO optimization.",
     tags: ["CONTENT", "Next.js", "GraphQL", "PostgreSQL"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -981,7 +981,7 @@ const projects = [
     description: "A security analysis tool for identifying vulnerabilities in web applications.",
     tags: ["SECURITY", "Python", "React", "Docker"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
   {
@@ -989,7 +989,7 @@ const projects = [
     description: "An immersive VR experience built with WebXR and Three.js.",
     tags: ["VR", "Three.js", "WebXR", "JavaScript"],
     image: "/placeholder.svg",
-    github: "https://github.com",
+    github: "https://github.com/AnneMerieN",
     demo: "https://example.com",
   },
 ]
