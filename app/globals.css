@@ -250,3 +250,12 @@
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
 }
+
+.body-text {
+  @apply text-zinc-300 leading-relaxed text-base md:text-lg;
+}
+
+.subheading {
+  @apply text-2xl font-semibold text-white mt-16 mb-2;
+}
+

@@ -120,7 +120,7 @@ export default function CyberpunkPortfolio() {
                     {/* Social links */}
                     <div className="flex gap-4 pt-2">
                       <Link
-                        href="https://github.com/AnneMerieN"
+                        href="https://github.com"
                         target="_blank"
                         className="text-white hover:text-pink-500 transition-colors relative group"
                       >
@@ -129,7 +129,7 @@ export default function CyberpunkPortfolio() {
                         <span className="sr-only">GitHub</span>
                       </Link>
                       <Link
-                        href="https://www.linkedin.com/in/anne-merie-nguyen/"
+                        href="https://linkedin.com"
                         target="_blank"
                         className="text-blue-500 hover:text-pink-500 transition-colors relative group"
                       >
@@ -138,7 +138,7 @@ export default function CyberpunkPortfolio() {
                         <span className="sr-only">LinkedIn</span>
                       </Link>
                       <Link
-                        href="mailto:annemn3@uci.edu"
+                        href="mailto:hello@example.com"
                         className="text-emerald-500 hover:text-pink-500 transition-colors relative group"
                       >
                         <Mail className="h-5 w-5 relative z-10" />
@@ -212,7 +212,6 @@ export default function CyberpunkPortfolio() {
             <h2 className="text-3xl font-bold text-white mb-2">
               FEATURED <span className="text-pink-500">PROJECTS</span>
             </h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">Explore my latest missions and completed objectives.</p>
           </div>
 
           <div className="max-w-6xl mx-auto space-y-8">
@@ -231,7 +230,7 @@ export default function CyberpunkPortfolio() {
                   </div>
                   {/* Category badge */}
                   <div className="absolute top-4 left-4 bg-zinc-900/80 backdrop-blur-sm text-pink-500 text-xs px-3 py-1 rounded-full uppercase tracking-wider border border-zinc-700">
-                    E-Commerce
+                    UI/UX DESIGN
                   </div>
                 </div>
 
@@ -240,18 +239,16 @@ export default function CyberpunkPortfolio() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300">
-                        NEXUS COMMERCE
+                        TEAMFIGHT TACTICS FOR NINTENDO SWITCH
                       </h3>
                       <p className="text-zinc-400 leading-relaxed text-lg">
-                        A full-stack e-commerce platform featuring secure payment processing, inventory management, and
-                        an intuitive admin dashboard. Built with modern technologies for optimal performance and
-                        scalability.
+                        Teamfight Tactics (TFT) is a popular autobattler developed by Riot Games, originally designed for PC and mobile platforms. This case study explores how TFT's gameplay can be adapted for the Nintendo Switch, balancing deep strategy mechanics with a console-friendly user interface.
                       </p>
                     </div>
 
                     {/* Tech stack */}
                     <div className="flex flex-wrap gap-2">
-                      {["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"].map((tech, index) => (
+                      {["Figma", "Miro", "Unity"].map((tech, index) => (
                         <span
                           key={index}
                           className="text-xs px-3 py-1 rounded-full bg-zinc-700/50 text-zinc-300 border border-zinc-600 group-hover:border-pink-500/30 transition-colors duration-300"
@@ -284,17 +281,16 @@ export default function CyberpunkPortfolio() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300">
-                        COSMIC DEFENDER
+                        TBA
                       </h3>
                       <p className="text-zinc-400 leading-relaxed text-lg">
-                        An immersive space shooter game with multiple enemy types, power-ups, and epic boss battles.
-                        Features advanced particle effects and responsive controls for an engaging gaming experience.
+                        TBA
                       </p>
                     </div>
 
                     {/* Tech stack */}
                     <div className="flex flex-wrap gap-2">
-                      {["Phaser", "TypeScript", "WebGL", "Canvas", "JavaScript"].map((tech, index) => (
+                      {["TBA", "TBA", "TBA", "TBA", "TBA"].map((tech, index) => (
                         <span
                           key={index}
                           className="text-xs px-3 py-1 rounded-full bg-zinc-700/50 text-zinc-300 border border-zinc-600 group-hover:border-pink-500/30 transition-colors duration-300"
@@ -359,17 +355,16 @@ export default function CyberpunkPortfolio() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300">
-                        NEURAL GENERATOR
+                        TBA
                       </h3>
                       <p className="text-zinc-400 leading-relaxed text-lg">
-                        An AI-powered content generation platform that creates high-quality text, images, and code based
-                        on user prompts. Features advanced machine learning algorithms and intuitive user interface.
+                      TBA
                       </p>
                     </div>
 
                     {/* Tech stack */}
                     <div className="flex flex-wrap gap-2">
-                      {["React", "OpenAI", "Node.js", "Python", "TensorFlow"].map((tech, index) => (
+                      {["TBA", "TBA", "TBA", "TBA", "TBA"].map((tech, index) => (
                         <span
                           key={index}
                           className="text-xs px-3 py-1 rounded-full bg-zinc-700/50 text-zinc-300 border border-zinc-600 group-hover:border-pink-500/30 transition-colors duration-300"
@@ -405,9 +400,6 @@ export default function CyberpunkPortfolio() {
             <h2 className="text-3xl font-bold text-white mb-2">
               TECH <span className="text-pink-500">STACK</span>
             </h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">
-              System capabilities and technical proficiencies optimized for maximum performance.
-            </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -588,8 +580,8 @@ export default function CyberpunkPortfolio() {
                     {
                       icon: <Github className="h-8 w-8" />,
                       name: "GitHub",
-                      handle: "@janedoe",
-                      url: "https://github.com/AnneMerieN",
+                      handle: "@AnneMerieN",
+                      url: "https://github.com",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-white",
                     },
@@ -597,15 +589,15 @@ export default function CyberpunkPortfolio() {
                       icon: <Linkedin className="h-8 w-8" />,
                       name: "LinkedIn",
                       handle: "Anne Merie Nguyen",
-                      url: "https://www.linkedin.com/in/anne-merie-nguyen/",
+                      url: "https://linkedin.com",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-blue-500",
                     },
                     {
                       icon: <Mail className="h-8 w-8" />,
                       name: "Email",
-                      handle: "annemn3@uci.edu",
-                      url: "mailto:annemn3@uci.edu",
+                      handle: "hello@example.com",
+                      url: "mailto:hello@example.com",
                       color: "from-zinc-800 to-zinc-900",
                       iconColor: "text-emerald-500",
                     },
@@ -668,7 +660,7 @@ export default function CyberpunkPortfolio() {
 
             <div className="flex gap-4">
               <Link
-                href="https://github.com/AnneMerieN"
+                href="https://github.com"
                 target="_blank"
                 className="text-white hover:text-pink-500 transition-colors"
               >
@@ -676,14 +668,14 @@ export default function CyberpunkPortfolio() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/anne-merie-nguyen/"
+                href="https://linkedin.com"
                 target="_blank"
                 className="text-blue-500 hover:text-pink-500 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="mailto:annemn3@uci.edu" className="text-emerald-500 hover:text-pink-400 transition-colors">
+              <Link href="mailto:hello@example.com" className="text-emerald-500 hover:text-pink-400 transition-colors">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -937,11 +929,11 @@ const techStackCategories = [
 // Sample project data
 const projects = [
   {
-    title: "NEXUS COMMERCE",
-    description: "A full-stack e-commerce platform with payment integration and admin dashboard.",
+    title: "TEAMFIGHT TACTICS FOR NINTENDO SWITCH",
+    description: "Teamfight Tactics (TFT) is a popular autobattler developed by Riot Games, originally designed for PC and mobile platforms. However, no version exists for gaming consoles like the Nintendo Switch, despite its massive user base and portability benefits. This case study explores how TFT's gameplay can be adapted for the Nintendo Switch, balancing deep strategy mechanics with a console-friendly user interface",
     tags: ["E-COMMERCE", "Next.js", "Stripe", "Prisma"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
   {
@@ -949,7 +941,7 @@ const projects = [
     description: "An AI-powered application that generates content based on user prompts.",
     tags: ["AI", "React", "OpenAI", "Node.js"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
   {
@@ -957,7 +949,7 @@ const projects = [
     description: "A collaborative task management application with real-time updates.",
     tags: ["PRODUCTIVITY", "TypeScript", "Firebase", "React"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
   {
@@ -965,7 +957,7 @@ const projects = [
     description: "A responsive analytics dashboard with data visualization and reporting.",
     tags: ["ANALYTICS", "Vue.js", "D3.js", "Express"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
   {
@@ -973,7 +965,7 @@ const projects = [
     description: "Real-time messaging application with end-to-end encryption and file sharing.",
     tags: ["COMMUNICATION", "Socket.io", "React", "MongoDB"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
   {
@@ -981,7 +973,7 @@ const projects = [
     description: "A modern blogging platform with markdown support and SEO optimization.",
     tags: ["CONTENT", "Next.js", "GraphQL", "PostgreSQL"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
   {
@@ -989,7 +981,7 @@ const projects = [
     description: "A security analysis tool for identifying vulnerabilities in web applications.",
     tags: ["SECURITY", "Python", "React", "Docker"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
   {
@@ -997,7 +989,7 @@ const projects = [
     description: "An immersive VR experience built with WebXR and Three.js.",
     tags: ["VR", "Three.js", "WebXR", "JavaScript"],
     image: "/placeholder.svg",
-    github: "https://github.com/AnneMerieN",
+    github: "https://github.com",
     demo: "https://example.com",
   },
 ]
