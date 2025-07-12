@@ -66,7 +66,7 @@ export default function CyberpunkPortfolio() {
                   <div className="lg:col-span-3 space-y-8">
                     {/* Job titles */}
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {["Full Stack Developer", "Game Developer", "UI/UX Designer"].map((title, index) => (
+                      {["Game Developer", "UI/UX Designer", "Front-End Developer"].map((title, index) => (
                         <div
                           key={index}
                           className="inline-block bg-zinc-900/80 rounded-lg px-3 py-1 border border-zinc-800 text-pink-500 text-xs uppercase tracking-wider"
@@ -87,8 +87,7 @@ export default function CyberpunkPortfolio() {
 
                     {/* Description */}
                     <p className="text-zinc-400 leading-relaxed border-l-2 border-pink-500 pl-4 max-w-xl">
-                      I craft exceptional digital experiences with clean code and cutting-edge technology. Specializing
-                      in web applications with futuristic interfaces and robust architecture.
+                      I'm a designer and developer who loves creating intuitive, playful digital experiences that put users first. With a background in Informatics and Mathematics, I enjoy combining logic, creativity, and empathy to bring ideas to life.
                     </p>
 
                     {/* CTA buttons */}
@@ -449,9 +448,9 @@ export default function CyberpunkPortfolio() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                About <span className="text-pink-500">Me</span>
-              </h2>
+            <h2 className="text-3xl font-bold text-white mb-2">
+              ABOUT <span className="text-pink-500">ME</span>
+            </h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
@@ -473,17 +472,13 @@ export default function CyberpunkPortfolio() {
               <div className="lg:col-span-2 space-y-8">
                 <div className="prose prose-invert max-w-none">
                   <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                    I'm a passionate UX Designer and Full-Stack Developer with over 5 years of experience creating
-                    digital experiences that matter. I specialize in bridging the gap between beautiful design and
-                    functional code.
+                    Hello, I’m Anne! I’m a UI/UX designer and undergraduate student at the University of California, Irvine, studying Informatics with a focus on Human-Computer Interaction. I’m also pursuing a bachelor’s degree in Mathematics. As a designer, I combine technical skills with visual storytelling to build thoughtful and user-centered experiences, especially in games and playful interfaces.
                   </p>
                   <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                    My journey began with a Computer Science degree, followed by hands-on experience at tech startups
-                    where I developed expertise in modern web technologies, user-centered design, and game development.
+                    I originally started in Computer Science but realized I wanted to do more than just write code. My lifelong love for gaming, sketching, and experimenting with visuals led me to discover UI/UX design, where I can blend creativity with problem-solving and make technology feel more intuitive and inclusive.
                   </p>
                   <p className="text-lg text-zinc-300 leading-relaxed">
-                    I believe in creating accessible, performant applications with intuitive interfaces that solve real
-                    problems for real people.
+                    Outside of work, I enjoy playing badminton and ping-pong, and I’m always on the lookout for new cafes to explore. Recently, I’ve also been getting back into reading, and it’s been a refreshing way to unwind and recharge.
                   </p>
                 </div>
 
@@ -493,11 +488,9 @@ export default function CyberpunkPortfolio() {
                     <div className="text-2xl">📚</div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2">Book Recommendation</h3>
-                      <p className="text-pink-500 font-semibold mb-2">"The Design of Everyday Things" by Don Norman</p>
+                      <p className="text-pink-500 font-semibold mb-2">"How To Be A Games User Reseacher" by Steve Bromley</p>
                       <p className="text-zinc-400 text-sm">
-                        A timeless classic that fundamentally changed how I think about user experience and design.
-                        Norman's insights into human-centered design principles are invaluable for anyone creating
-                        digital products.
+                        This book is a super helpful intro to game UX research, especially if you're curious about how games get tested and improved based on player feedback. Steve Bromley breaks things down in a really clear and approachable way, with real examples from the industry. It's a great read for anyone thinking about working in game design or UX.
                       </p>
                     </div>
                   </div>
@@ -509,11 +502,9 @@ export default function CyberpunkPortfolio() {
                     <div className="text-2xl">🎮</div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2">Favorite Game</h3>
-                      <p className="text-cyan-400 font-semibold mb-2">Hollow Knight</p>
+                      <p className="text-cyan-400 font-semibold mb-2">Teamfight Tactics</p>
                       <p className="text-zinc-400 text-sm">
-                        An indie masterpiece that showcases incredible art direction, tight gameplay mechanics, and
-                        atmospheric storytelling. It's a perfect example of how small teams can create extraordinary
-                        experiences.
+                        I’ve been playing Teamfight Tactics since Set 5: Reckoning, when I was stuck indoors during the peak of COVID. I’ve played every set since then, and my favorite has been Set 7: Dragonlands because of its fantasy theme and unique mechanics. I peaked Platinum in ranked, and my favorite tactician to use is the Poro because it’s really cute.
                       </p>
                     </div>
                   </div>
