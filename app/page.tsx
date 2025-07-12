@@ -263,7 +263,7 @@ export default function CyberpunkPortfolio() {
                         href="/projects/tft-switch"
                         className="inline-flex items-center gap-3 bg-zinc-900 hover:bg-pink-500 text-white px-6 py-3 rounded-xl border border-zinc-700 hover:border-pink-500 transition-all duration-300 group/btn"
                       >
-                        <span className="uppercase tracking-wider text-sm font-semibold">View Project</span>
+                        <span className="uppercase tracking-wider text-sm font-semibold">In Progress</span>
                         <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                       </Link>
                     </div>
