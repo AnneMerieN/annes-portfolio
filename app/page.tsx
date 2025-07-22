@@ -315,7 +315,7 @@ export default function CyberpunkPortfolio() {
                 {/* Screenshot placeholder */}
                 <div className="aspect-video lg:aspect-square bg-zinc-900 relative overflow-hidden order-1 lg:order-2">
                   <img
-                    src="/images/Iphone 15 Pro.png"
+                    src="/images/poroQuestMockup.png"
                     alt="Poro Quest Gameplay Screenshot"
                     className="w-full h-full object-contain bg-black"
                   />
