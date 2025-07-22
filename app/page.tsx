@@ -229,7 +229,7 @@ export default function CyberpunkPortfolio() {
                   </div>
                   {/* Category badge */}
                   <div className="absolute top-4 left-4 bg-zinc-900/80 backdrop-blur-sm text-pink-500 text-xs px-3 py-1 rounded-full uppercase tracking-wider border border-zinc-700">
-                    UI/UX DESIGN
+                    GAME UI/UX
                   </div>
                 </div>
 
@@ -280,16 +280,16 @@ export default function CyberpunkPortfolio() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300">
-                        TBA
+                        PORO QUEST
                       </h3>
                       <p className="text-zinc-400 leading-relaxed text-lg">
-                        TBA
+                        Poro Quest is a whimsical endless runner game where players guide an adorable Poro through snowy mountains, dodging obstacles and collecting cookies to score points. Designed with a playful and accessible interface, the game emphasizes intuitive gestures and charming visuals to create a lighthearted, engaging experience.
                       </p>
                     </div>
 
                     {/* Tech stack */}
                     <div className="flex flex-wrap gap-2">
-                      {["TBA", "TBA", "TBA", "TBA", "TBA"].map((tech, index) => (
+                      {["Figma", "Miro"].map((tech, index) => (
                         <span
                           key={index}
                           className="text-xs px-3 py-1 rounded-full bg-zinc-700/50 text-zinc-300 border border-zinc-600 group-hover:border-pink-500/30 transition-colors duration-300"
@@ -314,17 +314,14 @@ export default function CyberpunkPortfolio() {
 
                 {/* Screenshot placeholder */}
                 <div className="aspect-video lg:aspect-square bg-zinc-900 relative overflow-hidden order-1 lg:order-2">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 opacity-60"></div>
-                  <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(24,24,27,0.9)_1px,transparent_1px),linear-gradient(90deg,rgba(24,24,27,0.9)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <Gamepad className="h-16 w-16 text-pink-500 mx-auto mb-4 opacity-60" />
-                      <p className="text-zinc-400 text-sm uppercase tracking-wider">Game Screenshot</p>
-                    </div>
-                  </div>
-                  {/* Category badge */}
+                  <img
+                    src="/images/Iphone 15 Pro.png"
+                    alt="Poro Quest Gameplay Screenshot"
+                    className="w-full h-full object-contain bg-black"
+                  />
+                  {/* Category badge stays the same */}
                   <div className="absolute top-4 right-4 bg-zinc-900/80 backdrop-blur-sm text-pink-500 text-xs px-3 py-1 rounded-full uppercase tracking-wider border border-zinc-700">
-                    Game
+                    Game UI/UX
                   </div>
                 </div>
               </div>
@@ -550,9 +547,9 @@ export default function CyberpunkPortfolio() {
             <h2 className="text-3xl font-bold text-white mb-2">
               CONNECT <span className="text-pink-500">WITH ME</span>
             </h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">
+            {/* <p className="text-zinc-400 max-w-2xl mx-auto">
               Establish direct communication channels through these network interfaces.
-            </p>
+            </p> */}
           </div>
 
           <div className="max-w-3xl mx-auto">
