@@ -218,16 +218,16 @@ export default function CyberpunkPortfolio() {
             <div className="w-full bg-zinc-800/50 rounded-2xl border border-zinc-700 overflow-hidden transition-all duration-500 hover:border-pink-500/30 hover:shadow-[0_0_30px_rgba(249,168,212,0.15)] group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 {/* Screenshot placeholder */}
-                <div className="aspect-video lg:aspect-square bg-zinc-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-500/20 opacity-60"></div>
-                  <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(24,24,27,0.9)_1px,transparent_1px),linear-gradient(90deg,rgba(24,24,27,0.9)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <Monitor className="h-16 w-16 text-pink-500 mx-auto mb-4 opacity-60" />
-                      <p className="text-zinc-400 text-sm uppercase tracking-wider">Project Screenshot</p>
-                    </div>
-                  </div>
-                  {/* Category badge */}
+                <div className="aspect-video lg:aspect-square bg-zinc-900 relative overflow-hidden flex items-center justify-center">
+                  <Image
+                    src="/images/Thumbnail (1).png"
+                    alt="Screenshot of Project"
+                    width={500}
+                    height={500}
+                    className="object-contain max-h-full max-w-full"
+                    priority
+                  />
+
                   <div className="absolute top-4 left-4 bg-zinc-900/80 backdrop-blur-sm text-pink-500 text-xs px-3 py-1 rounded-full uppercase tracking-wider border border-zinc-700">
                     GAME UI/UX
                   </div>

@@ -86,7 +86,11 @@ export default function TFTSwitchCaseStudy() {
               </div>
             </div>
             <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              Riot Game's Teamfight Tactics TFT is available on both PC and mobile platforms. I wanted to reimagine the game on the Nintendo Switch console.
+              Teamfight Tactics (TFT) is Riot Games’ popular auto-battler strategy game, originally designed for PC and mobile platforms. It requires high-level decision-making, spatial awareness, and real-time reactions to dynamic in-game scenarios. However, the user interface (UI) is built around mouse and touch interactions, making it a challenge to adapt for game consoles.<br></br><br></br>
+
+              This case study explores the reimagining of TFT for the Nintendo Switch, leveraging the Design Thinking process to preserve gameplay depth while ensuring intuitive, controller-based interactions.<br></br><br></br>
+
+              As a dedicated TFT player and aspiring Riot UX designer, this was not just a design exercise but a passion project. I wanted to explore how one of my favorite games could evolve for a different player environment and better meet accessibility and usability standards.
             </p>
           </section>
 
@@ -96,7 +100,7 @@ export default function TFTSwitchCaseStudy() {
             <div className="w-1 h-12 bg-pink-500"></div>
               <div>
                 <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">01</p>
-                <h2 className="text-2xl md:text-4xl font-bold text-white">PROBLEM DISCOVERY</h2>
+                <h2 className="text-2xl md:text-4xl font-bold text-white">THE DESIGN CHALLENGE</h2>
               </div>
             </div>
 
@@ -105,10 +109,21 @@ export default function TFTSwitchCaseStudy() {
             </h3>
 
             <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              As the gaming industry expands across platforms, more studios are adapting PC-first games for consoles like the Nintendo Switch, Xbox, and PlayStation. While this broadens market reach, it also presents a key design challenge: how can complex, mouse-and-keyboard-based experiences be transformed into intuitive, controller-friendly gameplay that works well on handheld devices or living room setups?
-
-              This challenge is especially relevant for real-time tactics and auto-battler games. These genres rely on quick decision-making, drag-and-drop mechanics, and screen-wide interactions. PC interfaces are designed for precision, speed, and direct manipulation, all of which become more difficult when players are limited to joysticks and button-based inputs.
+              As the gaming industry expands across platforms, many studios are adapting PC-first games for consoles. This introduces a major design challenge:
             </p>
+
+            <div className="mt-6 mb-10 max-w-4xl mx-auto bg-pink-500/10 border border-pink-500/20 text-pink-300 text-center px-6 py-5 rounded-xl">
+              <p className="text-lg md:text-xl font-semibold leading-relaxed">
+                How can complex, mouse-and-keyboard-based experiences be transformed into intuitive, controller-friendly gameplay that works on handheld devices and living room setups?
+              </p>
+            </div>
+
+            <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
+              This challenge is particularly tough for auto-battlers and tactics games, which rely on:
+            </p>
+
+
+
 
           <div className="md:flex md:items-center gap-8 my-12">
               <img
@@ -122,15 +137,15 @@ export default function TFTSwitchCaseStudy() {
             </div>
 
 
-            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Teamfight Tactics as a Case Study</h3>
+            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Constraints</h3>
             <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              Teamfight Tactics (TFT), Riot Games' popular auto-battler, highlights this challenge. Originally developed for PC and later adapted for mobile, TFT requires players to roll for champions, place units on a grid, combine items, and scout opponents. The gameplay depends on fast interactions using hotkeys and mouse clicks, all within tight time windows between rounds.
+              <ul className="list-disc list-inside text-zinc-300 space-y-2">
+              <li>Limited screen space (especially in handheld mode)</li>
+              <li>Absence of touch or mouse input</li>
+              <li>Need for quick, accurate unit interaction under time pressure</li>
+              <li>Complex gameplay that can overwhelm new players</li>
+            </ul>
 
-              Bringing TFT to the Nintendo Switch involves more than shrinking the interface to fit a smaller screen. It requires a full rethinking of the user experience. Without a mouse or touchscreen, players need a new way to:
-
-              Place units quickly and accurately
-              Navigate shops and inventories with minimal friction
-              Maintain situational awareness across the entire board
             </p>
 
             <figure className="my-8">
@@ -192,7 +207,7 @@ export default function TFTSwitchCaseStudy() {
             <div className="w-1 h-12 bg-pink-500"></div>
               <div>
                 <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">02</p>
-                <h2 className="text-2xl md:text-4xl font-bold text-white">EMPATHIZING</h2>
+                <h2 className="text-2xl md:text-4xl font-bold text-white">EMPATHIZE</h2>
               </div>
             </div>
             <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Understanding Console Players and Auto-Battler Fans</h3>
@@ -210,7 +225,7 @@ export default function TFTSwitchCaseStudy() {
                 {/* Alex */}
                 <figure className="bg-zinc-900 p-6 rounded-xl border border-zinc-700 text-center">
                   <img
-                    src="/images/SealBites-Logo.png"
+                    src="/images/gamer_boy_icon.png"
                     alt="Alex Persona"
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-zinc-600"
                   />
@@ -223,7 +238,7 @@ export default function TFTSwitchCaseStudy() {
                 {/* Maya */}
                 <figure className="bg-zinc-900 p-6 rounded-xl border border-zinc-700 text-center">
                   <img
-                    src="/images/SealBites-Logo.png"
+                    src="/images/gamer_girl_icon.png"
                     alt="Maya Persona"
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-zinc-600"
                   />
@@ -236,7 +251,7 @@ export default function TFTSwitchCaseStudy() {
                 {/* Ryan */}
                 <figure className="bg-zinc-900 p-6 rounded-xl border border-zinc-700 text-center">
                   <img
-                    src="/images/SealBites-Logo.png"
+                    src="/images/gamer_boy_icon.png"
                     alt="Ryan Persona"
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-zinc-600"
                   />
@@ -247,13 +262,14 @@ export default function TFTSwitchCaseStudy() {
                 </figure>
               </div>
 
-            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Key User Needs</h3>
+            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Key Findings</h3>
             <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              From these personas, I identified a few common expectations:
-                A fast and frictionless way to move, place, and sell units using a joystick and buttons
-                A UI that adapts to different viewing distances and screen sizes
-                A simplified HUD that preserves key game information without overwhelming the player
-                The ability to perform frequent actions—like rolling, buying XP, or scouting—quickly and intuitively
+              <ul className="list-disc list-inside text-zinc-300 space-y-2">
+                <li>Players feared losing matches due to clunky joystick placement controls</li>
+                <li>Strategic menus like shop and scouting needed to be fast and accessible</li>
+                <li>Handheld mode required enlarged UI elements and better contrast</li>
+                <li>Controller users favored button combinations (A/B/X/Y + L/R) for layered navigation</li>
+              </ul>
             </p>
 
           </section>
@@ -264,82 +280,29 @@ export default function TFTSwitchCaseStudy() {
             <div className="w-1 h-12 bg-pink-500"></div>
               <div>
                 <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">03</p>
-                <h2 className="text-2xl md:text-4xl font-bold text-white">RESEARCH</h2>
+                <h2 className="text-2xl md:text-4xl font-bold text-white">DEFINE</h2>
               </div>
             </div>
 
-            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Competitive Analysis: How Other Strategy Games Adapt to Console</h3>
+            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Problem Statement</h3>
 
             <p className="text-zinc-300 leading-relaxed text-base md:text-lg mb-6">
-              To better understand how complex strategy games are translated for console use, I studied the control schemes, UI layouts, and gameplay flows of similar titles on the Nintendo Switch. These included:
+              Console-based TFT players need a streamlined way to interact with the board, shop, and champions using joystick and button inputs—without sacrificing the game’s complexity.
             </p>
 
-            <ul className="list-disc list-inside text-zinc-300 text-base md:text-lg space-y-3 mb-8">
-              <li>
-                <span className="text-white font-medium">Fire Emblem: Three Houses</span> – grid-based tactical gameplay with clean snap-to-tile movement and minimal UI clutter.
-              </li>
-              <li>
-                <span className="text-white font-medium">Wargroove</span> – strong visual clarity and simple icon-based HUD designed for both handheld and docked play.
-              </li>
-              <li>
-                <span className="text-white font-medium">Slay the Spire</span> – excellent controller mapping and streamlined menu navigation for deck-based decisions.
-              </li>
-              <li>
-                <span className="text-white font-medium">Darkest Dungeon</span> – a game that struggled with slow navigation and overwhelming UI on console due to its dense PC interface.
-              </li>
-            </ul>
+            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Design Goals:</h3>
 
-            <p className="text-zinc-300 leading-relaxed text-base md:text-lg mb-2">
-              These comparisons revealed patterns in successful adaptations. The most effective games:
-            </p>
-
-            <ul className="list-disc list-inside text-zinc-300 text-base md:text-lg space-y-3">
-              <li>Used snap-based movement or grid navigation instead of freeform dragging.</li>
-              <li>Consolidated frequent actions into radial menus or quick button shortcuts.</li>
-              <li>Presented essential game info clearly, often with scalable text or overlays.</li>
-              <li>Reduced nested menus in favor of single-screen interactions or HUD layers.</li>
-            </ul>
-
-            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">TFT-Specific Control Flow Analysis</h3>
             <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              Next, I examined how players interact with TFT on PC and mobile, breaking down common actions such as:
-              Dragging units from the bench to the board
-              Rolling for champions
-              Selling units
-              Buying XP
-              Viewing traits and enemy boards
-              On PC, these actions are streamlined through hotkeys and direct clicks. However, trying to replicate this on a joystick would introduce friction—players would need to navigate small targets with a stick, losing speed and precision.
+              <ul className="list-disc list-inside text-zinc-300 space-y-2">
+                <li>Re-map core interactions to intuitive controller inputs</li>
+                <li>Reduce UI clutter while maintaining access to all game-critical info</li>
+                <li>Ensure rapid user flows between board, shop, and scouting screens</li>
+              </ul>
             </p>
-
-            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Gap in Console Auto-Battlers</h3>
-            <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              I also noted that auto-battlers are nearly absent from console platforms, likely due to the difficulty of adapting mouse-based interactions. This presented both a challenge and an opportunity: TFT could be the first successful console-native auto-battler, if reimagined thoughtfully for gamepad controls.
-            </p>
-
-            <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Key Findings</h3>
-            <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              Traditional PC interfaces do not scale well to console inputs.
-
-              Grid-based tactical games succeed on Switch when they embrace snap-to interactions and simplified HUDs.
-
-              TFT requires a controller-first control scheme that supports speed, readability, and depth.
-            </p>
-
-            <figure className="my-8">
-              <img
-                src="/images/profile.png"
-                alt="Detailed wireframe overview"
-                className="w-full object-cover border border-zinc-700 rounded-xl"
-              />
-              <figcaption className="mt-3 p-3 bg-zinc-800 text-sm text-zinc-400 rounded-lg">
-                A walkthrough of the game’s snap-to grid interface and layout transition for handheld mode.
-              </figcaption>
-            </figure>
-
           </section>
 
           <section>
-            <h2 className="text-2xl md:text-4xl font-bold text-pink-500 mb-10">THE CHALLENGE</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-pink-500 mb-10">IDEATE</h2>
             <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
               How can we maintain TFT’s rich strategy while making every core action feel effortless on a controller or
               touch screen? The end solution needed to be just as competitive as the PC version—without feeling like a
