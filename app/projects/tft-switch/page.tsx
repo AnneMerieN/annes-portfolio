@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image";
 import { ArrowLeft, Calendar, Users, Wrench, Target, Lightbulb, Gamepad2, Monitor, Smartphone } from "lucide-react"
 
 export default function TFTSwitchCaseStudy() {
@@ -28,28 +29,31 @@ export default function TFTSwitchCaseStudy() {
             UI/UX Case Study
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Adapting Teamfight Tactics for Nintendo Switch
+            Teamfight Tactics for Nintendo Switch
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            A comprehensive UX/UI case study exploring the challenges and solutions for bringing a PC strategy game to
-            handheld console
-          </p>
         </div>
 
-        {/* Wide Banner Image */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="w-full aspect-[21/9] bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 rounded-2xl border border-zinc-700 overflow-hidden relative">
-            <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(15,15,17,0.9)_1px,transparent_1px),linear-gradient(90deg,rgba(15,15,17,0.9)_1px,transparent_1px)] bg-[size:40px_40px] opacity-30"></div>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(249,168,212,0.1)_0%,transparent_70%)]"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <Gamepad2 className="h-20 w-20 text-pink-500 mx-auto mb-4 opacity-60" />
-                <p className="text-zinc-400 text-lg uppercase tracking-wider">Case Study Banner Image</p>
-                <p className="text-zinc-500 text-sm mt-2">TFT Switch Adaptation Showcase</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+{/* Wide Banner Image */}
+<div className="max-w-6xl mx-auto mb-16">
+  {/* Hairline gradient frame */}
+  
+    {/* Actual banner */}
+    <div className="w-full aspect-[21/9] rounded-2xl overflow-hidden relative">
+  <Image
+    src="/images/Thumbnail.png"
+    alt="TFT Switch Adaptation Showcase Banner"
+    fill
+    className="object-cover"
+    priority
+    sizes="100vw"
+  />
+</div>
+</div>
+
+
+
 
           {/* ────────────  Content  ──────────── */}
         <div className="max-w-4xl mx-auto space-y-24">
@@ -138,15 +142,13 @@ export default function TFTSwitchCaseStudy() {
 
 
             <h3 className="text-2xl font-semibold text-white mt-16 mb-2">Constraints</h3>
-            <p className="text-zinc-300 leading-relaxed text-base md:text-lg">
-              <ul className="list-disc list-inside text-zinc-300 space-y-2">
-              <li>Limited screen space (especially in handheld mode)</li>
-              <li>Absence of touch or mouse input</li>
-              <li>Need for quick, accurate unit interaction under time pressure</li>
-              <li>Complex gameplay that can overwhelm new players</li>
-            </ul>
+<ul className="list-disc list-inside text-zinc-300 space-y-2 text-base md:text-lg">
+  <li>Limited screen space (especially in handheld mode)</li>
+  <li>Absence of touch or mouse input</li>
+  <li>Need for quick, accurate unit interaction under time pressure</li>
+  <li>Complex gameplay that can overwhelm new players</li>
+</ul>
 
-            </p>
 
             <figure className="my-8">
               <img
