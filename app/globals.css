@@ -247,6 +247,37 @@
   }
 }
 
+@layer components {
+
+  /* same bottom spacing for any sub-section chunk */
+  .section-block { @apply mb-12; }
+  /* extra breathing room between major sections */
+  .section-block-lg { @apply mb-16; }
+
+  /* the pink bar + number + H2 header row */
+  .section-header { @apply flex items-center gap-4 mb-10; }
+
+  /* the little pink chip under your page title */
+  .eyebrow {
+    @apply inline-block bg-zinc-900/80 backdrop-blur-md rounded-lg px-3 py-1
+           border border-zinc-800 text-pink-500 text-xs uppercase tracking-wider;
+  }
+
+  /* small dark card shell (you already use this look a lot) */
+  .card { @apply bg-zinc-900/50 border border-zinc-800 p-5; }
+
+  /* NEW: consistent body text style */
+  .body-text { 
+    @apply text-zinc-300 leading-relaxed text-base md:text-lg; 
+  }
+
+  /* NEW: subheadings under numbered sections */
+  .subheading { 
+    @apply text-xl font-semibold text-white mb-4; 
+  }
+}
+
+
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
 }
