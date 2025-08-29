@@ -280,16 +280,17 @@ export default function CyberpunkPortfolio() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300">
-                        PORO QUEST
+                        THE WERECLEANER
                       </h3>
                       <p className="text-zinc-400 leading-relaxed text-lg">
-                        Poro Quest is a whimsical endless runner game where players guide an adorable Poro through snowy mountains, dodging obstacles and collecting cookies to score points. Designed with a playful and accessible interface, the game emphasizes intuitive gestures and charming visuals to create a lighthearted, engaging experience.
+                        The Werecleaner is a student-developed indie game by USC Games. It combines stealth mechanics with lighthearted narrative elements, where players take on the role of a werewolf janitor navigating challenges in a quirky, stylized environment.
+                        I conducted a games user research (GUR) study to evaluate the game’s onboarding process, UI clarity, and player perceptions of challenge difficulty.
                       </p>
                     </div>
 
                     {/* Tech stack */}
                     <div className="flex flex-wrap gap-2">
-                      {["Figma", "Miro"].map((tech, index) => (
+                      {["Trello", "Miro"].map((tech, index) => (
                         <span
                           key={index}
                           className="text-xs px-3 py-1 rounded-full bg-zinc-700/50 text-zinc-300 border border-zinc-600 group-hover:border-pink-500/30 transition-colors duration-300"
@@ -315,13 +316,13 @@ export default function CyberpunkPortfolio() {
                 {/* Screenshot placeholder */}
                 <div className="aspect-video lg:aspect-square bg-zinc-900 relative overflow-hidden order-1 lg:order-2">
                   <img
-                    src="/images/poroQuestMockup.png"
+                    src="/images/the-werecleaner-mfx0h.png"
                     alt="Poro Quest Gameplay Screenshot"
-                    className="w-full h-full object-contain bg-black"
+                    className="w-full h-85 object-cover object-top"
                   />
                   {/* Category badge stays the same */}
                   <div className="absolute top-4 right-4 bg-zinc-900/80 backdrop-blur-sm text-pink-500 text-xs px-3 py-1 rounded-full uppercase tracking-wider border border-zinc-700">
-                    Game UI/UX
+                    Games User Research
                   </div>
                 </div>
               </div>
