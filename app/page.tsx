@@ -220,7 +220,7 @@ export default function CyberpunkPortfolio() {
                 {/* Screenshot placeholder */}
                 <div className="aspect-video lg:aspect-square bg-zinc-900 relative overflow-hidden flex items-center justify-center">
                   <Image
-                    src="/images/Thumbnail (1).png"
+                    src="/images/switch (1).png"
                     alt="Screenshot of Project"
                     width={500}
                     height={500}
@@ -263,7 +263,7 @@ export default function CyberpunkPortfolio() {
                         href="/projects/tft-switch"
                         className="inline-flex items-center gap-3 bg-zinc-900 hover:bg-pink-500 text-white px-6 py-3 rounded-xl border border-zinc-700 hover:border-pink-500 transition-all duration-300 group/btn"
                       >
-                        <span className="uppercase tracking-wider text-sm font-semibold">In Progress</span>
+                        <span className="uppercase tracking-wider text-sm font-semibold">VIEW PROJECT</span>
                         <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                       </Link>
                     </div>

@@ -267,26 +267,17 @@
   .card { @apply bg-zinc-900/50 border border-zinc-800 p-5; }
 
   /* NEW: consistent body text style */
-  .body-text { 
-    @apply text-zinc-300 leading-relaxed text-base md:text-lg; 
+  .body-text {
+  @apply text-zinc-300 leading-relaxed text-base md:text-lg;
   }
 
   /* NEW: subheadings under numbered sections */
-  .subheading { 
-    @apply text-xl font-semibold text-white mb-4; 
+  .subheading {
+    @apply text-2xl font-semibold text-white mt-16 mb-2;
+  }
+  .animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
   }
 }
 
-
-.animate-bounce-slow {
-  animation: bounce-slow 2s ease-in-out infinite;
-}
-
-.body-text {
-  @apply text-zinc-300 leading-relaxed text-base md:text-lg;
-}
-
-.subheading {
-  @apply text-2xl font-semibold text-white mt-16 mb-2;
-}
 
