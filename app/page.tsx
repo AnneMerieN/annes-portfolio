@@ -106,7 +106,7 @@ export default function CyberpunkPortfolio() {
                       </Link>
 
                       <Link
-                        href="/Anne_Merie_Nguyen_Resume_Official.pdf"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border border-zinc-700 text-zinc-300 hover:border-pink-500 hover:text-pink-500 rounded-xl transition-all duration-300 uppercase tracking-wider text-sm px-6 py-3 h-auto flex items-center"
