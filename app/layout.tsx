@@ -1,25 +1,31 @@
 import "@/app/globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Inter } from "next/font/google"
+import { Arimo } from "next/font/google"
+import Sidebar from "@/components/sidebar"
 
-
-const inter = Inter({ subsets: ["latin"] })
+const arimo = Arimo({
+  subsets: ["latin"],
+  variable: "--font-arimo",
+})
 
 export const metadata = {
-  title: "Anne Merie's Portfolio",
-  description: "A modern, sleek personal portfolio website",
-    generator: 'v0.dev'
+  title: "Anne Merie Nguyen — Portfolio",
+  description: "Product Designer + Developer portfolio",
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
-          {children}
-        </ThemeProvider>
-        <SpeedInsights /> {/* ← Add this here */}
+    <html lang="en" className="dark">
+      <body className={`${arimo.variable} font-sans`}>
+        <Sidebar />
+        <div className="md:pl-[260px] min-h-screen">
+          <main className="max-w-[1300px] mx-auto">{children}</main>
+        </div>
+        <SpeedInsights />
       </body>
     </html>
   )
