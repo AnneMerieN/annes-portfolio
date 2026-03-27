@@ -17,11 +17,8 @@ import {
 
 const projects = [
   { name: "AI Pitch Coach", href: "/projects/ai-pitch-coach" },
-  { name: "Razer", href: "/projects/razer" },
   { name: "Teamfight Tactics", href: "/projects/tft-switch" },
-  { name: "VALORANT Mobile", href: "/projects/valorant-mobile" },
   { name: "USC Games", href: "/projects/usc-games" },
-  { name: "Cleanerpunk 2067", href: "/projects/cleanerpunk-2067" },
 ]
 
 const connectLinks = [
@@ -94,7 +91,7 @@ export default function Sidebar() {
             Anne Merie Nguyen
           </p>
           <p className="text-[15px] text-[#99A1AF] leading-snug">
-            Product Designer + Developer
+            Product Management
           </p>
         </div>
 

@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { MapPin, ArrowUpRight } from "lucide-react"
+import FadeIn from "@/components/fade-in"
+import FloatingParticles from "@/components/floating-particles"
 
 const chipColors: Record<string, { bg: string; text: string }> = {
   // Design — purple
@@ -30,7 +32,7 @@ const projects = [
     description:
       "An AI pitch practice tool that gives rubric-based feedback, scorecards, and top fixes across text, voice, video, and file uploads.",
     tools: ["Product Design", "Full-Stack"],
-    image: "/images/Thumbnail.png",
+    image: "/images/ai-pitch-coach-thumbnail.png",
     href: "/projects/ai-pitch-coach",
   },
   {
@@ -46,78 +48,118 @@ const projects = [
 
 export default function HomePage() {
   return (
-    <div className="px-6 md:px-20 py-16">
-      {/* Hero heading */}
-      <div className="mb-6">
-        <h1 className="text-[40px] md:text-[54px] leading-[1.25] text-white font-normal max-w-[896px]">
-          {"I'm Anne\u2014an "}
-          <em className="italic">impact-driven</em>
-          {" product designer who builds end-to-end experiences from user insights to polished UI to shipped prototypes"}
-        </h1>
-      </div>
+    <div className="px-6 md:px-20">
+      {/* Hero section — full viewport */}
+      <div className="h-screen flex flex-col relative overflow-hidden">
+        <FloatingParticles />
+        <div className="flex-1 flex items-center relative z-10">
+          <div>
+            <FadeIn>
+              <p className="flex items-center gap-2 text-[20px] md:text-[24px] text-[#99A1AF] mb-3">
+                <span className="inline-block animate-wiggle text-[25px]">🐰</span>
+                Hi, there
+              </p>
+            </FadeIn>
+            <FadeIn delay={200}>
+              <h1 className="text-[40px] md:text-[52px] leading-[1.15] text-white font-normal mb-6">
+                {"I'm Anne \u2014 I design products\npeople "}
+                <em className="italic text-accent">love</em>.
+              </h1>
+            </FadeIn>
+            <FadeIn delay={400}>
+              <p className="text-[18px] md:text-[20px] text-[#99A1AF] leading-relaxed max-w-[640px] mb-6">
+                From user insights to polished UI to shipped prototypes.
+              </p>
+            </FadeIn>
+            <FadeIn delay={600}>
+              <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700 text-[14px] text-[#99A1AF]">
+                  <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="8" cy="7" r="2.5" />
+                    <path d="M8 1.5C5 1.5 2.5 4 2.5 7C2.5 10.5 8 14.5 8 14.5S13.5 10.5 13.5 7C13.5 4 11 1.5 8 1.5Z" />
+                  </svg>
+                  <span>Irvine, CA</span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700 text-[14px] text-[#99A1AF]">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+                  </span>
+                  <span>Open to opportunities</span>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
 
-      {/* Location */}
-      <div className="flex items-center gap-2 mb-16">
-        <MapPin className="h-5 w-5 text-[#99A1AF]" />
-        <span className="text-[#99A1AF] text-[17px]">Irvine, CA</span>
+        {/* Scroll indicator — pinned to bottom */}
+        <FadeIn delay={800}>
+          <a
+            href="#projects"
+            className="flex flex-col items-center gap-2 pb-10 text-[#8B8F9A] hover:text-white transition-colors cursor-pointer"
+          >
+            <span className="text-[13px] uppercase tracking-[0.15em]">Projects</span>
+            <svg className="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </FadeIn>
       </div>
 
       {/* Project Cards Stacked */}
-      <div className="flex flex-col gap-16">
-        {projects.map((project) => (
-          <Link key={project.title} href={project.href} className="group">
-            <div className="relative bg-sidebar border border-[#363636] rounded-card p-8 md:p-10 transition-all duration-300 hover:border-[#4A4A4A] hover:scale-[1.02]">
-              {/* Pop out icon */}
-              <div className="absolute top-6 right-6 w-10 h-10 rounded-full bg-[#363636] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
-                <ArrowUpRight className="h-5 w-5 text-white" />
-              </div>
-              {/* Top section: tags, title, subtitle, description */}
-              <div className="mb-6">
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tools.map((tool) => (
-                    <span
-                      key={tool}
-                      className="px-3 py-1 text-[12px] rounded-md font-medium"
-                      style={{
-                        backgroundColor: chipColors[tool]?.bg || "#2A2A2A",
-                        color: chipColors[tool]?.text || "#B0B3BC",
-                      }}
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
+      <div id="projects" className="flex flex-col gap-16 py-16 scroll-mt-8">
+        {projects.map((project, i) => (
+          <FadeIn key={project.title} delay={i * 150}>
+          <Link href={project.href} className="group">
+            <div className="relative rounded-2xl border border-zinc-700 hover:border-zinc-500 transition-all duration-500 overflow-hidden bg-white/[0.01]">
+              {/* Content */}
+              <div className="p-6 md:p-8">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10 flex-1">
+                    {/* Left: Title + Chips */}
+                    <div>
+                      <h3 className="text-[24px] text-white font-normal leading-snug group-hover:text-accent transition-colors duration-300 mb-3">
+                        {project.title}
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tools.map((tool) => (
+                          <span
+                            key={tool}
+                            className="px-3 py-1 text-[12px] rounded-full border border-zinc-700 text-[#99A1AF]"
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
 
-                {/* Title + Description row */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
-                  <div>
-                    <h3 className="text-[28px] text-white font-normal leading-snug group-hover:text-[#D1D5DB] transition-colors">
-                      {project.title}
-                    </h3>
-                    {project.subtitle && (
-                      <p className="text-[15px] text-[#8B8F9A] mt-1">{project.subtitle}</p>
-                    )}
+                    {/* Right: Description */}
+                    <p className="text-[15px] leading-[1.7] text-[#99A1AF]">
+                      {project.description}
+                    </p>
                   </div>
-                  <p className="text-[16px] leading-[1.7] text-[#B0B3BC]">
-                    {project.description}
-                  </p>
+
+                  {/* Arrow */}
+                  <div className="w-8 h-8 rounded-full border border-zinc-700 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:border-zinc-500 shrink-0 ml-4 mt-1">
+                    <ArrowUpRight className="h-4 w-4 text-[#99A1AF]" />
+                  </div>
                 </div>
               </div>
 
-              {/* Image below */}
+              {/* Image */}
               {project.image && (
-                <div className="rounded-2xl overflow-hidden bg-[#1E1E1E] relative h-[360px] md:h-[480px]">
+                <div className="mx-6 md:mx-8 mb-6 md:mb-8 rounded-xl overflow-hidden bg-[#1A1A1A] relative h-[320px] md:h-[440px]">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-contain"
+                    className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
                   />
                 </div>
               )}
             </div>
           </Link>
+          </FadeIn>
         ))}
       </div>
     </div>

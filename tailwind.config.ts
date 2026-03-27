@@ -33,6 +33,17 @@ const config = {
       borderRadius: {
         card: "28px",
       },
+      animation: {
+        "spin-slow": "spin 6s linear infinite",
+        wiggle: "wiggle 2s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(-12deg)" },
+          "75%": { transform: "rotate(12deg)" },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -10,15 +10,21 @@ const experience = [
 
 const education = [
   { school: "UC Irvine", degree: "B.S. Business Information Management" },
-  { school: "Udemy", degree: "Figma UI UX Design Essentials Certificate" },
+]
+
+const certificates = [
+  { source: "Udemy", name: "Figma UI UX Design Essentials Certificate" },
+  { source: "Udemy", name: "User Experience Design Fundamentals" },
+  { source: "Udemy", name: "Microsoft Power BI Desktop for Business Intelligence" },
+  { source: "Udemy", name: "Claude Code - The Practical Guide" },
 ]
 
 const favorites = [
   {
     icon: Wrench,
-    title: "Building With",
+    title: "Currently Building With",
     items: ["Figma", "Vercel", "Claude", "Notion"],
-    note: "my current go-to stack for shipping fast",
+    note: "the best tools",
     images: [
       { src: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg", alt: "Figma" },
       { src: "https://cdn.worldvectorlogo.com/logos/vercel.svg", alt: "Vercel", lightBg: true },
@@ -26,6 +32,20 @@ const favorites = [
       { src: "https://cdn.worldvectorlogo.com/logos/notion-2.svg", alt: "Notion", lightBg: true },
     ],
   },
+  {
+    icon: Gamepad2,
+    title: "Currently Playing",
+    items: ["Teamfight Tactics", "ARAM Mayhem", "Valorant"],
+    note: "peaked Plat in TFT, still climbing",
+    images: [
+      { src: "/images/fav-tft.png", alt: "Teamfight Tactics", cover: true },
+      { src: "/images/fav-aram.jpg", alt: "ARAM Mayhem", cover: true },
+      { src: "/images/fav-valorant.jpg", alt: "Valorant", cover: true },
+    ],
+  },
+]
+
+const outsideWork = [
   {
     icon: Coffee,
     title: "Coffee Order",
@@ -39,17 +59,6 @@ const favorites = [
       { src: "/images/fav-littleox.jpg", alt: "Little Ox", cover: true },
       { src: "/images/fav-thankyoucoffee.jpg", alt: "Thank You Coffee", cover: true },
       { src: "/images/fav-sipcoffee.jpg", alt: "Sip Coffee", cover: true },
-    ],
-  },
-  {
-    icon: Gamepad2,
-    title: "Currently Playing",
-    items: ["Teamfight Tactics", "ARAM Mayhem", "Valorant"],
-    note: "peaked Plat in TFT, still climbing",
-    images: [
-      { src: "/images/fav-tft.png", alt: "Teamfight Tactics", cover: true },
-      { src: "/images/fav-aram.jpg", alt: "ARAM Mayhem", cover: true },
-      { src: "/images/fav-valorant.jpg", alt: "Valorant", cover: true },
     ],
   },
   {
@@ -135,7 +144,7 @@ export default function AboutPage() {
           Education
         </h2>
         <div className="flex flex-col">
-          {education.map((item, i) => (
+          {education.map((item) => (
             <div
               key={item.school}
               className="flex items-center gap-3 py-5"
@@ -147,14 +156,31 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Certificates */}
+      <section className="mb-14">
+        <h2 className="text-[13px] text-[#8B8F9A] uppercase tracking-[0.7px] mb-6">
+          Certificates
+        </h2>
+        <div className="flex gap-3">
+          <span className="text-[16px] text-white font-bold shrink-0 py-3">Udemy</span>
+          <div className="flex flex-col">
+            {certificates.map((item) => (
+              <div key={item.name} className="py-3">
+                <span className="text-[16px] text-[#99A1AF] font-normal">{item.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <hr className="border-zinc-800 mb-14" />
 
       {/* Current Favorites */}
-      <section>
+      <section className="mb-14">
         <h2 className="text-[13px] text-[#8B8F9A] uppercase tracking-[0.7px] mb-6">
           Current Favorites
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
+        <div className="grid grid-cols-1 gap-y-10">
           {favorites.map((category) => {
             const Icon = category.icon
             return (
@@ -202,6 +228,51 @@ export default function AboutPage() {
                     ))}
                   </div>
                 )}
+              </div>
+            )
+          })}
+        </div>
+      </section>
+
+      <hr className="border-zinc-800 mb-14" />
+
+      {/* When I'm Not Designing */}
+      <section>
+        <h2 className="text-[13px] text-[#8B8F9A] uppercase tracking-[0.7px] mb-6">
+          When I&apos;m Not Designing
+        </h2>
+        <div className="grid grid-cols-1 gap-y-10">
+          {outsideWork.map((category) => {
+            const Icon = category.icon
+            return (
+              <div key={category.title}>
+                <div className="flex items-center gap-3 mb-2">
+                  <Icon className="h-[18px] w-[18px] text-accent" />
+                  <h3 className="text-[16px] text-white font-normal">
+                    {category.title}
+                  </h3>
+                </div>
+                <p className="text-[13px] text-[#8B8F9A] italic mb-3">
+                  {category.note}
+                </p>
+                <div className="flex gap-4">
+                  {category.items.map((item, i) => (
+                    <div key={item} className="flex flex-col items-center gap-2">
+                      {category.images && category.images[i] && (
+                        <div className="w-40 h-40 rounded-xl overflow-hidden relative shrink-0">
+                          <img
+                            src={category.images[i].src}
+                            alt={category.images[i].alt}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      )}
+                      <p className="text-[13px] text-[#99A1AF] text-center max-w-[160px]">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             )
           })}
