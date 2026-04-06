@@ -368,7 +368,7 @@ function SectionHeader({ number, title }: { number: string; title: string }) {
       <div className="w-1 bg-accent rounded-full self-stretch" />
       <div>
         <p className="text-[14px] text-accent font-medium uppercase tracking-widest">{number}</p>
-        <h2 className="text-[28px] md:text-[36px] text-white font-normal">
+        <h2 className="text-[22px] md:text-[28px] text-white font-normal">
           {title}
         </h2>
       </div>

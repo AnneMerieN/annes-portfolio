@@ -80,7 +80,7 @@ export default function AtlasCaseStudy() {
     <div className="w-1 h-12 bg-pink-500" />
     <div>
       <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">01</p>
-      <h2 id="situation-heading" className="text-2xl md:text-4xl font-bold text-white">
+      <h2 id="situation-heading" className="text-xl md:text-2xl font-bold text-white">
         SITUATION
       </h2>
     </div>
@@ -126,7 +126,7 @@ export default function AtlasCaseStudy() {
     <div className="w-1 h-12 bg-pink-500" />
     <div>
       <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">02</p>
-      <h2 id="research-heading" className="text-2xl md:text-4xl font-bold text-white">
+      <h2 id="research-heading" className="text-xl md:text-2xl font-bold text-white">
         RESEARCH
       </h2>
     </div>
@@ -215,7 +215,7 @@ export default function AtlasCaseStudy() {
     <div className="w-1 h-12 bg-pink-500" />
     <div>
       <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">03</p>
-      <h2 id="studyplan-heading" className="text-2xl md:text-4xl font-bold text-white">
+      <h2 id="studyplan-heading" className="text-xl md:text-2xl font-bold text-white">
         STUDY PLAN
       </h2>
     </div>
@@ -382,7 +382,7 @@ export default function AtlasCaseStudy() {
     <div className="w-1 h-12 bg-pink-500" />
     <div>
       <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">04</p>
-      <h2 id="execution-heading" className="text-2xl md:text-4xl font-bold text-white">
+      <h2 id="execution-heading" className="text-xl md:text-2xl font-bold text-white">
         EXECUTION
       </h2>
     </div>
@@ -473,7 +473,7 @@ export default function AtlasCaseStudy() {
     <div className="w-1 h-12 bg-pink-500" />
     <div>
       <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">05</p>
-      <h2 id="analysis-heading" className="text-2xl md:text-4xl font-bold text-white">
+      <h2 id="analysis-heading" className="text-xl md:text-2xl font-bold text-white">
         ANALYSIS
       </h2>
     </div>
@@ -559,7 +559,7 @@ export default function AtlasCaseStudy() {
     <div className="w-1 h-12 bg-pink-500" />
     <div>
       <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">06</p>
-      <h2 id="findings-heading" className="text-2xl md:text-4xl font-bold text-white">
+      <h2 id="findings-heading" className="text-xl md:text-2xl font-bold text-white">
         FINDINGS
       </h2>
     </div>
@@ -673,7 +673,7 @@ export default function AtlasCaseStudy() {
     <div className="w-1 h-12 bg-pink-500" />
     <div>
       <p className="text-lg text-pink-500 font-medium uppercase tracking-widest">07</p>
-      <h2 id="reflection-heading" className="text-2xl md:text-4xl font-bold text-white">
+      <h2 id="reflection-heading" className="text-xl md:text-2xl font-bold text-white">
         REFLECTIONS
       </h2>
     </div>

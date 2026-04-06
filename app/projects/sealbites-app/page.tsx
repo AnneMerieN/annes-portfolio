@@ -55,7 +55,7 @@ export default function SealbitesAppCaseStudy() {
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Project Overview */}
           <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8 hover:border-emerald-400/30 transition-all duration-300">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Project Overview
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -114,7 +114,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Problem Exploration */}
           <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Problem Exploration
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -135,7 +135,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Empathizing */}
           <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Empathizing
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -157,7 +157,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* The Challenge */}
           <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               The Challenge
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -183,7 +183,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Research */}
           <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Research
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -235,7 +235,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Key Insights */}
           <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Key Insights
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -282,7 +282,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Design Principles */}
           <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Design Principles
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -344,7 +344,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Wireframes & Flow */}
           <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Wireframes & Flow
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -385,7 +385,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Testing & Iteration */}
           <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Testing & Iteration
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -442,7 +442,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Final Solution */}
           <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Final Solution
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -478,7 +478,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Learnings */}
           <section className="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Learnings
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>
@@ -504,7 +504,7 @@ export default function SealbitesAppCaseStudy() {
 
           {/* Next Steps */}
           <section className="bg-zinc-800/30 rounded-2xl border border-zinc-700 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="h-px flex-grow bg-emerald-400/30 mr-4"></span>
               Next Steps
               <span className="h-px flex-grow bg-emerald-400/30 ml-4"></span>

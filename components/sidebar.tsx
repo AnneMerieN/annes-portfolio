@@ -63,8 +63,8 @@ export default function Sidebar() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-screen w-[260px] bg-sidebar flex flex-col gap-[30px] overflow-y-auto p-8 z-50 rounded-r-2xl transition-transform duration-300 md:translate-x-0 ${
-          mobileOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-3 left-3 h-[calc(100vh-24px)] w-[260px] bg-sidebar flex flex-col gap-[30px] overflow-y-auto p-8 z-50 rounded-2xl transition-transform duration-300 md:translate-x-0 ${
+          mobileOpen ? "translate-x-0" : "-translate-x-[272px]"
         }`}
       >
         {/* Mobile close button */}

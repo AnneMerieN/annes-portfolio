@@ -13,11 +13,12 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-arimo)", "sans-serif"],
+        sans: ["var(--font-helvetica)", "var(--font-arimo)", "sans-serif"],
+        display: ["var(--font-machina)", "var(--font-arimo)", "sans-serif"],
       },
       colors: {
         sidebar: "#212121",
-        accent: "#E8833A",
+        accent: "#C6FE21",
         pink: {
           500: "#f9a8d4",
         },

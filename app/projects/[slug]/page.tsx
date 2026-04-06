@@ -91,7 +91,7 @@ export default function CaseStudyPage() {
           {/* Overview */}
           <section className="mb-16">
             <div className="bg-zinc-800/50 rounded-lg border border-zinc-700 p-8">
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <h2 className="text-xl font-bold text-white mb-6 flex items-center">
                 <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
                 Overview
                 <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
@@ -109,7 +109,7 @@ export default function CaseStudyPage() {
           {/* Problem Statement */}
           <section className="mb-16">
             <div className="bg-zinc-800/30 rounded-lg border border-zinc-700 p-8">
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <h2 className="text-xl font-bold text-white mb-6 flex items-center">
                 <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
                 Problem Statement
                 <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
@@ -128,7 +128,7 @@ export default function CaseStudyPage() {
           {caseStudy.research && (
             <section className="mb-16">
               <div className="bg-zinc-800/50 rounded-lg border border-zinc-700 p-8">
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <h2 className="text-xl font-bold text-white mb-6 flex items-center">
                   <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
                   Research
                   <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
@@ -148,7 +148,7 @@ export default function CaseStudyPage() {
           {caseStudy.designProcess && (
             <section className="mb-16">
               <div className="bg-zinc-800/30 rounded-lg border border-zinc-700 p-8">
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <h2 className="text-xl font-bold text-white mb-6 flex items-center">
                   <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
                   Design Process
                   <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
@@ -168,7 +168,7 @@ export default function CaseStudyPage() {
           {caseStudy.wireframes && caseStudy.wireframes.length > 0 && (
             <section className="mb-16">
               <div className="bg-zinc-800/50 rounded-lg border border-zinc-700 p-8">
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <h2 className="text-xl font-bold text-white mb-6 flex items-center">
                   <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
                   Wireframes
                   <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
@@ -198,7 +198,7 @@ export default function CaseStudyPage() {
           {caseStudy.finalDesign && (
             <section className="mb-16">
               <div className="bg-zinc-800/30 rounded-lg border border-zinc-700 p-8">
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <h2 className="text-xl font-bold text-white mb-6 flex items-center">
                   <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
                   Final Design
                   <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>
@@ -253,7 +253,7 @@ export default function CaseStudyPage() {
           {caseStudy.keyLearnings && (
             <section className="mb-16">
               <div className="bg-zinc-800/50 rounded-lg border border-zinc-700 p-8">
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <h2 className="text-xl font-bold text-white mb-6 flex items-center">
                   <span className="h-px flex-grow bg-pink-500/30 mr-4"></span>
                   Key Learnings
                   <span className="h-px flex-grow bg-pink-500/30 ml-4"></span>

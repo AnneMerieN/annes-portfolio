@@ -1,8 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-import { MapPin, ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import FadeIn from "@/components/fade-in"
 import FloatingParticles from "@/components/floating-particles"
+import BentoHero from "../components/bento-hero"
 
 const chipColors: Record<string, { bg: string; text: string }> = {
   // Design — purple
@@ -48,55 +49,19 @@ const projects = [
 
 export default function HomePage() {
   return (
-    <div className="px-6 md:px-20">
-      {/* Hero section — full viewport */}
-      <div className="h-screen flex flex-col relative overflow-hidden">
+    <div>
+      {/* Hero section — bento grid, edge-to-edge */}
+      <div className="min-h-screen md:h-screen relative overflow-hidden px-3 md:px-6 py-3">
         <FloatingParticles />
-        <div className="flex-1 flex items-center relative z-10">
-          <div>
-            <FadeIn>
-              <p className="flex items-center gap-2 text-[20px] md:text-[24px] text-[#99A1AF] mb-3">
-                <span className="inline-block animate-wiggle text-[25px]">🐰</span>
-                Hi, there
-              </p>
-            </FadeIn>
-            <FadeIn delay={200}>
-              <h1 className="text-[40px] md:text-[52px] leading-[1.15] text-white font-normal mb-6">
-                {"I'm Anne \u2014 I design products\npeople "}
-                <em className="italic text-accent">love</em>.
-              </h1>
-            </FadeIn>
-            <FadeIn delay={400}>
-              <p className="text-[18px] md:text-[20px] text-[#99A1AF] leading-relaxed max-w-[640px] mb-6">
-                From user insights to polished UI to shipped prototypes.
-              </p>
-            </FadeIn>
-            <FadeIn delay={600}>
-              <div className="flex items-center gap-3 flex-wrap">
-                <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700 text-[14px] text-[#99A1AF]">
-                  <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="8" cy="7" r="2.5" />
-                    <path d="M8 1.5C5 1.5 2.5 4 2.5 7C2.5 10.5 8 14.5 8 14.5S13.5 10.5 13.5 7C13.5 4 11 1.5 8 1.5Z" />
-                  </svg>
-                  <span>Irvine, CA</span>
-                </div>
-                <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700 text-[14px] text-[#99A1AF]">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
-                  </span>
-                  <span>Open to opportunities</span>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
+        <div className="h-auto md:h-full relative z-10">
+          <BentoHero />
         </div>
 
-        {/* Scroll indicator — pinned to bottom */}
-        <FadeIn delay={800}>
+        {/* Scroll indicator — absolutely pinned to bottom center */}
+        <FadeIn delay={800} className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
           <a
             href="#projects"
-            className="flex flex-col items-center gap-2 pb-10 text-[#8B8F9A] hover:text-white transition-colors cursor-pointer"
+            className="flex flex-col items-center gap-2 text-[#8B8F9A] hover:text-white transition-colors cursor-pointer"
           >
             <span className="text-[13px] uppercase tracking-[0.15em]">Projects</span>
             <svg className="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,7 +72,7 @@ export default function HomePage() {
       </div>
 
       {/* Project Cards Stacked */}
-      <div id="projects" className="flex flex-col gap-16 py-16 scroll-mt-8">
+      <div id="projects" className="flex flex-col gap-16 py-16 scroll-mt-8 px-6 md:px-20 max-w-[1300px] mx-auto">
         {projects.map((project, i) => (
           <FadeIn key={project.title} delay={i * 150}>
           <Link href={project.href} className="group">
