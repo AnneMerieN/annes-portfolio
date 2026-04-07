@@ -72,7 +72,7 @@ export default function HomePage() {
       </div>
 
       {/* Project Cards Stacked */}
-      <div id="projects" className="flex flex-col gap-16 py-16 scroll-mt-8 px-6 md:px-20 max-w-[1300px] mx-auto">
+      <div id="projects" className="flex flex-col gap-16 py-16 scroll-mt-8 px-3 md:px-6">
         {projects.map((project, i) => (
           <FadeIn key={project.title} delay={i * 150}>
           <Link href={project.href} className="group">

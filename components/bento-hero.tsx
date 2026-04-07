@@ -147,18 +147,22 @@ export default function BentoHero() {
         </div>
       </FadeIn>
 
-      {/* Focus areas tile */}
+      {/* View Projects tile */}
       <FadeIn className="col-span-2 md:col-span-2" delay={400}>
-        <div className="h-full rounded-2xl border border-zinc-700 bg-white/[0.01] hover:border-zinc-500 transition-all duration-500 p-5 md:p-6 flex flex-col justify-center">
-          <div className="space-y-2">
-            {["Product Design", "User Research", "Prototyping"].map((area) => (
-              <div key={area} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-                <span className="text-[12px] text-[#B0B3BC]">{area}</span>
-              </div>
-            ))}
+        <a href="#projects" className="h-full block group">
+          <div className="h-full rounded-2xl border border-zinc-700 bg-white/[0.01] hover:border-zinc-500 transition-all duration-500 p-5 md:p-6 flex items-center justify-center gap-3">
+            <span className="text-[28px] font-display font-semibold text-accent tracking-tight uppercase">VIEW PROJECTS</span>
+            <div className="flex items-center transition-all duration-300 group-hover:translate-x-1 shrink-0">
+              <svg
+                width="38" height="30" viewBox="0 0 38 30" fill="none"
+                style={{}}
+              >
+                <path d="M4 3 L15 15 L4 27" stroke="#C6FE21" strokeOpacity="0.85" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter"/>
+                <path d="M19 3 L30 15 L19 27" stroke="#C6FE21" strokeOpacity="0.85" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter"/>
+              </svg>
+            </div>
           </div>
-        </div>
+        </a>
       </FadeIn>
     </div>
   )
