@@ -18,7 +18,7 @@ import {
 const projects = [
   { name: "AI Pitch Coach", href: "/projects/ai-pitch-coach" },
   { name: "Teamfight Tactics", href: "/projects/tft-switch" },
-  { name: "USC Games", href: "/projects/usc-games" },
+  { name: "Live Event Voting", href: "/projects/live-event-voting" },
 ]
 
 const connectLinks = [

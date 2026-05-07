@@ -19,15 +19,6 @@ const chipColors: Record<string, { bg: string; text: string }> = {
 
 const projects = [
   {
-    title: "Teamfight Tactics for Nintendo Switch",
-    subtitle: "Riot Games | 2025",
-    description:
-      "A UX/UI case study adapting TFT for handheld and controller play, with a focus on controls, readability, and accessibility.",
-    tools: ["Game UI/UX", "Prototyping"],
-    image: "/images/switch (1).png",
-    href: "/projects/tft-switch",
-  },
-  {
     title: "AI Pitch Coach",
     subtitle: "SZNVC | 2025",
     description:
@@ -37,13 +28,22 @@ const projects = [
     href: "/projects/ai-pitch-coach",
   },
   {
-    title: "USC Games",
-    subtitle: "USC Games | 2024",
+    title: "Teamfight Tactics for Nintendo Switch",
+    subtitle: "Riot Games | 2025",
     description:
-      "User research focused on playtesting, heuristic evaluations, and improving player experience for USC game studios.",
-    tools: ["User Research", "Heuristic Evaluation"],
+      "A UX/UI case study adapting TFT for handheld and controller play, with a focus on controls, readability, and accessibility.",
+    tools: ["Game UI/UX", "Prototyping"],
+    image: "/images/switch (1).png",
+    href: "/projects/tft-switch",
+  },
+  {
+    title: "Live Event Voting System",
+    subtitle: "The Stella Zhang New Venture Competition | 2026",
+    description:
+      "SZNVC Live Vote is a full-stack event voting platform designed to support fair, in-person audience voting during live competitions or showcases. The system uses one-time voting codes, admin-controlled voting windows, and real-time results tracking to prevent duplicate votes and reduce the risk of shared voting links being used by non-attendees.",
+    tools: ["Full-Stack"],
     image: null,
-    href: "/projects/usc-games",
+    href: "/projects/live-event-voting",
   },
 ]
 
@@ -57,18 +57,6 @@ export default function HomePage() {
           <BentoHero />
         </div>
 
-        {/* Scroll indicator — absolutely pinned to bottom center */}
-        <FadeIn delay={800} className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
-          <a
-            href="#projects"
-            className="flex flex-col items-center gap-2 text-[#8B8F9A] hover:text-white transition-colors cursor-pointer"
-          >
-            <span className="text-[13px] uppercase tracking-[0.15em]">Projects</span>
-            <svg className="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
-        </FadeIn>
       </div>
 
       {/* Project Cards Stacked */}
