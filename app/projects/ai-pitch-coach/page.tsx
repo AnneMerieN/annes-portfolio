@@ -1,5 +1,6 @@
 import Image from "next/image"
 import FadeIn from "@/components/fade-in"
+import BrowserFrame from "@/components/browser-frame"
 import { Search, Target, Lightbulb, Code2, FlaskConical, BarChart3, Repeat, Type, Upload, Mic, FileText, Brain, ListChecks, Sparkles, MessageSquare, ArrowRight, X, Check, Volume2, Video } from "lucide-react"
 
 export default function AIPitchCoachCaseStudy() {
@@ -44,14 +45,18 @@ export default function AIPitchCoachCaseStudy() {
       </div>
 
       {/* Hero Image */}
-      <div className="rounded-2xl overflow-hidden bg-[#212121] relative aspect-[16/9] mb-16">
-        <Image
-          src="/images/ai-pitch-coach-thumbnail.png"
-          alt="AI Pitch Coach"
-          fill
-          className="object-cover object-top"
-          priority
-        />
+      <div className="mb-16">
+        <BrowserFrame url="ai-pitch-coach.vercel.app">
+          <div className="relative aspect-[16/9] bg-[#212121]">
+            <Image
+              src="/images/ai-pitch-coach-thumbnail.png"
+              alt="AI Pitch Coach"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+        </BrowserFrame>
       </div>
 
       {/* 00 — Overview */}

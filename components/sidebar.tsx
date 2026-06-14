@@ -84,7 +84,7 @@ export default function Sidebar() {
               alt="Anne Merie Nguyen"
               width={48}
               height={48}
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full scale-125"
             />
           </div>
           <p className="font-bold text-[17px] text-white leading-snug">

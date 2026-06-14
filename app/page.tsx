@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react"
 import FadeIn from "@/components/fade-in"
 import FloatingParticles from "@/components/floating-particles"
 import BentoHero from "../components/bento-hero"
+import BrowserFrame from "@/components/browser-frame"
 
 const chipColors: Record<string, { bg: string; text: string }> = {
   // Design — purple
@@ -101,13 +102,28 @@ export default function HomePage() {
 
               {/* Image */}
               {project.image && (
-                <div className="mx-6 md:mx-8 mb-6 md:mb-8 rounded-xl overflow-hidden bg-[#1A1A1A] relative h-[320px] md:h-[440px]">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
-                  />
+                <div className="mx-6 md:mx-8 mb-6 md:mb-8">
+                  {project.href === "/projects/ai-pitch-coach" ? (
+                    <BrowserFrame>
+                      <div className="relative aspect-[16/9] bg-[#212121]">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                        />
+                      </div>
+                    </BrowserFrame>
+                  ) : (
+                    <div className="rounded-xl overflow-hidden bg-[#1A1A1A] relative h-[320px] md:h-[440px]">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                      />
+                    </div>
+                  )}
                 </div>
               )}
             </div>

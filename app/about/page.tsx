@@ -3,6 +3,7 @@ import { Wrench, Coffee, Gamepad2, Heart } from "lucide-react"
 import TypingText from "@/components/typing-text"
 
 const experience = [
+  { company: "Sandisk", role: "eCommerce Program Manager", year: "June 2026 - Sept. 2026" },
   { company: "UC Irvine Paul Merage School of Business", role: "Product Developer", year: "Oct. 2025 - Present" },
   { company: "Design @ UCI", role: "UI/UX Designer", year: "Sept. 2025 - Nov. 2025" },
   { company: "USC Games", role: "User Researcher", year: "Dec. 2024 - Feb. 2025" },
@@ -77,39 +78,31 @@ const outsideWork = [
 export default function AboutPage() {
   return (
     <div className="px-6 md:px-20 py-16 bg-[#171717] min-h-screen">
-      {/* Page Title */}
-      <div className="mb-10">
-        <h1 className="text-[34px] md:text-[44px] font-normal text-white leading-tight">
-          <TypingText text="Hi there! I'm Anne" />
-        </h1>
-      </div>
-
       {/* Intro: Text left, Photo right */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 items-center">
-        <p className="text-[18px] text-[#99A1AF] leading-[1.8]">
-          {"I'm a BIM student at UC Irvine who's obsessed with building things people actually want to use — from the first "}
-          <span className="text-accent font-medium">{'"wait, what\'s the problem?"'}</span>
-          {" all the way to a "}
-          <span className="text-accent font-medium">shipped product</span>
-          {". I care about "}
-          <span className="text-white font-medium">clarity</span>
-          {", "}
-          <span className="text-white font-medium">accessibility</span>
-          {", and making things feel simple without being boring. I love the space between "}
-          <span className="text-accent font-medium">design</span>
-          {" and "}
-          <span className="text-accent font-medium">development</span>
-          {" — I'm always balancing big-picture thinking with the small details. Turning messy, ambiguous problems into "}
-          <span className="text-white font-medium">structured experiences</span>
-          {" is kind of my thing."}
-        </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 items-start">
+        <div>
+          <h1 className="text-[26px] md:text-[34px] font-normal text-white leading-tight mb-6">
+            <TypingText text="Hi there! I'm Anne" />
+          </h1>
+          <p className="text-[18px] text-[#99A1AF] leading-[1.8]">
+            {"I'm a Business Information Management student at UC Irvine who's interested in "}
+            <span className="text-accent">product, UX, technology</span>
+            {", and building things that make people's lives easier. I like working on projects where I can combine "}
+            <span className="text-accent">creativity, organization, and problem-solving</span>
+            {", whether that's designing better "}
+            <span className="text-accent">user experiences</span>
+            {", improving workflows, or helping bring an idea to life. Outside of that, I love "}
+            <span className="text-accent">playing games, trying new coffee spots, and staying creative</span>
+            {"."}
+          </p>
+        </div>
         <div className="md:ml-auto w-full max-w-[380px]">
           <div className="rounded-2xl overflow-hidden bg-zinc-800 aspect-square relative">
             <Image
-              src="/images/about-2.jpg"
-              alt="Anne at UC Irvine"
+              src="/images/profile.png"
+              alt="Anne Merie Nguyen"
               fill
-              className="object-cover object-bottom"
+              className="object-cover object-[center_60%]"
             />
           </div>
         </div>
