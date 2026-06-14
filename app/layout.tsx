@@ -1,23 +1,12 @@
 import "@/app/globals.css"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Arimo, Space_Grotesk, Inter } from "next/font/google"
+import { DM_Sans } from "next/font/google"
 import Sidebar from "@/components/sidebar"
 
-const arimo = Arimo({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-arimo",
-})
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-machina",
-  weight: ["400", "500", "600", "700"],
-})
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-helvetica",
-  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-dm-sans",
+  weight: ["300", "400", "500", "600"],
 })
 
 export const metadata = {
@@ -32,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${arimo.variable} ${spaceGrotesk.variable} ${inter.variable} font-sans`}>
+      <body className={`${dmSans.variable} font-sans`}>
         <Sidebar />
         <div className="md:pl-[284px] min-h-screen">
           <main>{children}</main>

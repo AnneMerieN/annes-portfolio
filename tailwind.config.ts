@@ -13,8 +13,8 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-helvetica)", "var(--font-arimo)", "sans-serif"],
-        display: ["var(--font-machina)", "var(--font-arimo)", "sans-serif"],
+        sans: ["var(--font-dm-sans)", "sans-serif"],
+        display: ["var(--font-dm-sans)", "sans-serif"],
       },
       colors: {
         sidebar: "#212121",
